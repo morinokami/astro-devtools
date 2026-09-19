@@ -35,6 +35,11 @@ export default defineConfig({
   run: {
     cache: true,
     tasks: {
+      inspect: {
+        command:
+          "vp dlx @modelcontextprotocol/inspector@latest --web --server-url http://localhost:4321/__astro-devtools/__mcp --transport http",
+        cache: false,
+      },
       "pkg-pr-new": {
         command: "pkg-pr-new publish --pnpm './packages/astro-devtools'",
         cache: false,

@@ -127,6 +127,14 @@ answering with data only the running dev server has:
 `astro-devtools_overview_info`, `astro-devtools_routes_info`, and
 `astro-devtools_actions_info`.
 
+When developing this repository, start the playground dev server, then run
+`vp run inspect` in another terminal to open the
+[MCP Inspector](https://github.com/modelcontextprotocol/inspector) web UI
+with `http://localhost:4321/__astro-devtools/__mcp` as its Streamable HTTP
+target. The task uses `@modelcontextprotocol/inspector@latest`, so there is
+no pinned Inspector version to update. If the dev server uses a different
+port, change the server URL in the Inspector UI.
+
 The endpoint has no authentication or origin checks: native MCP clients
 send no Origin header and cannot complete the interactive one-time-code
 flow. Anyone who can reach the dev server's address can therefore run the
