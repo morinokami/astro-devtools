@@ -62,7 +62,13 @@ export default defineConfig({
       ],
     },
     dts: true,
-    exports: true,
+    // Generates package.json's `exports`. tsdown would also record the
+    // bundled dependencies' exact versions in an `inlinedDependencies` field,
+    // an open proposal (e18e/ecosystem-issues#237) that no registry or
+    // scanner reads yet. Off until one does: meanwhile it is only one more
+    // place to keep versions in sync. `deps.onlyBundle` above is what guards
+    // the bundle.
+    exports: { inlinedDependencies: false },
   },
   run: {
     tasks: {
