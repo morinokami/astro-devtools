@@ -16,7 +16,7 @@ catalog:
   "@playwright/test": 1.63.0
   "@tailwindcss/postcss": 4.3.3
   "@types/alpinejs": 3.13.11
-  "@types/node": 26.5.1
+  "@types/node": 26.6.1
   "@types/react": 19.3.0
   "@types/react-dom": 19.3.0
   "@vitest/browser-playwright": 4.1.11

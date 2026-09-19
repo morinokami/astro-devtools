@@ -13,6 +13,7 @@
     "prepare": "vp config --no-agent"
   },
   "devDependencies": {
+    "@types/node": "catalog:",
     "@vitejs/devtools": "catalog:devtools",
     "knip": "catalog:",
     "pkg-pr-new": "catalog:",
