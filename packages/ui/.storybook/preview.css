@@ -1,0 +1,35 @@
+/*
+ * Storybook preview stylesheet. The real panels compile Tailwind and
+ * theme.css through @tailwindcss/postcss into a string injected into the
+ * DevTools shadow root. Here the same plugin runs in Vite's CSS pipeline;
+ * the rules below recreate the host environment around every story.
+ */
+
+@import "tailwindcss" source(none);
+@import "../src/theme.css";
+
+/* theme.css excludes story files from consumers, so add them back only here. */
+@source "../src/**/*.stories.tsx";
+
+:root {
+  color-scheme: light dark;
+}
+
+:root[data-color-scheme="light"] {
+  color-scheme: only light;
+}
+
+:root[data-color-scheme="dark"] {
+  color-scheme: only dark;
+}
+
+body {
+  color: var(--color-body);
+  /* Storybook draws its selectable background and grid on this same surface. */
+  background-color: var(--color-panel);
+}
+
+.storybook-panel-host {
+  min-height: 100vh;
+  container: panel / inline-size;
+}

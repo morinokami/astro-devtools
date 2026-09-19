@@ -1,0 +1,14 @@
+---
+// Delays its output briefly before rendering a timestamped message.
+interface Props {
+  label?: string;
+}
+
+const { label = "message" } = Astro.props;
+await new Promise((resolve) => setTimeout(resolve, 400));
+const renderedAt = new Date().toLocaleTimeString("en-US");
+---
+
+<p>
+  <strong>{label}</strong> rendered on the server at {renderedAt}
+</p>

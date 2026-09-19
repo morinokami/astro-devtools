@@ -1,0 +1,98 @@
+packages:
+  - packages/*
+  - playground
+
+catalogMode: strict
+catalogPrune: true
+
+catalog:
+  "@astrojs/alpinejs": 1.0.0
+  "@astrojs/node": 11.1.5
+  "@astrojs/preact": 6.0.5
+  "@astrojs/react": 6.0.5
+  "@astrojs/solid-js": 7.0.2
+  "@astrojs/svelte": 9.0.1
+  "@astrojs/vue": 7.0.2
+  "@playwright/test": 1.63.0
+  "@tailwindcss/postcss": 4.3.3
+  "@types/alpinejs": 3.13.11
+  "@types/node": 26.5.1
+  "@types/react": 19.3.0
+  "@types/react-dom": 19.3.0
+  "@vitest/browser-playwright": 4.1.11
+  alpinejs: 3.17.2
+  astro: 7.3.2
+  class-variance-authority: 0.7.1
+  cn: 0.3.0
+  devalue: 5.9.2
+  es-module-lexer: 3.0.2
+  happy-dom: 20.14.5
+  knip: 6.35.1
+  magic-string: 1.3.1
+  pkg-pr-new: 0.0.88
+  playwright: 1.63.0
+  postcss: 8.5.28
+  preact: 10.29.8
+  react: 19.3.0
+  react-dom: 19.3.0
+  solid-js: 1.9.15
+  svelte: 5.57.0
+  tailwindcss: 4.3.3
+  publint: 0.3.24
+  typescript: 7.0.2
+  vite: npm:@voidzero-dev/vite-plus-core@0.3.2
+  vite-plus: 0.3.2
+  vitest: 4.1.11
+  vue: 3.5.42
+
+catalogs:
+  devtools:
+    "@devframes/agentic": 1.0.0
+    "@devframes/vite": 1.0.0
+    "@vitejs/devtools": 0.7.5
+    "@vitejs/devtools-kit": 0.7.5
+    "@vitejs/devtools-oxc": 0.7.5
+    "@vitejs/devtools-rolldown": 0.7.5
+    "@vitejs/devtools-vite": 0.7.5
+    "@vitejs/devtools-vitest": 0.7.5
+    devframe: 1.0.0
+  storybook:
+    "@storybook/addon-a11y": 10.6.0
+    "@storybook/addon-themes": 10.6.0
+    "@storybook/addon-vitest": 10.6.0
+    "@storybook/preact-vite": 10.6.0
+    storybook: 10.6.0
+
+allowBuilds:
+  esbuild: true
+
+minimumReleaseAge: 1440
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  # The 2023 ReDoS backport for the 6.x line, published (signed, no
+  # provenance) after the 7.x line had begun publishing with provenance —
+  # a verified-benign downgrade, pinned so other semver versions stay covered.
+  - semver@6.3.1
+
+peerDependencyRules:
+  allowedVersions:
+    # @astrojs/svelte 9.0.1 and svelte2tsx 0.7.59 accept typescript up to ^6
+    # and only load it from their editor integration (`astro check`), which
+    # the playground never runs. The playground pins the catalog's 7.0.2 so it
+    # shares one vite-plus instance with packages/astro-devtools; with a
+    # different typescript peer, `vp run` started from the playground would
+    # otherwise run `vp pack` through a vite-plus resolved against 6.x.
+    "@astrojs/svelte>typescript": 7.0.2
+    "svelte2tsx>typescript": 7.0.2
+  # Accept any `vite`/`vitest` as a peer, whatever range a package asks for:
+  # the overrides below alias both to vite-plus-core, whose 0.x version
+  # satisfies no upstream peer range.
+  allowAny:
+    - vite
+    - vitest
+# One shared vite (aliased to vite-plus-core) and one vitest copy across the
+# entire tree — astro's own vite dependency included — per the Vite+
+# single-instance contract (written by `vp migrate`).
+overrides:
+  vite@*: "catalog:"
+  vitest@*: "catalog:"

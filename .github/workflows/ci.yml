@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Vite+
+        uses: voidzero-dev/setup-vp@24d870228786dc83ae73482406bdd1e7befaec14 # v1.21.0
+        with:
+          node-version-file: ".node-version"
+          cache: true
+
+      - name: Build workspace
+        run: vp run -r build
+
+      - name: Generate Astro types
+        run: vp run --filter playground sync
+
+      - name: Run Vite+ check
+        run: vp check
+
+      - name: Run knip
+        run: vp run knip
+
+      - name: Run publint
+        run: vp run publint
+
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Vite+
+        uses: voidzero-dev/setup-vp@24d870228786dc83ae73482406bdd1e7befaec14 # v1.21.0
+        with:
+          node-version-file: ".node-version"
+          cache: true
+
+      - name: Build workspace
+        run: vp run -r build
+
+      - name: Run unit tests
+        run: vp run --filter './packages/*' test
+
+      - name: Run e2e tests
+        run: vp run --filter playground e2e
+
+      - name: Upload Playwright traces
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: playwright-traces
+          path: playground/.e2e/*/test-results/
+          if-no-files-found: ignore
+          include-hidden-files: true
+          retention-days: 7

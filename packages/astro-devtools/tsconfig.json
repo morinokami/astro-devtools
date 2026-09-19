@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    // ES2025 is admitted one group at a time, because Node 22 — the oldest
+    // Astro 7 runs on (>=22.12), and so the oldest this package must run on —
+    // ships only part of it, and `target: "esnext"` emits whatever type-checks:
+    // typing a group early would let a call compile here and throw in a user's
+    // `astro dev`. `lib.es2025` bundles six groups; each one's floor:
+    // - `es2025.iterator` (iterator helpers) is in: V8 12.2, so every Node 22.
+    //   In browsers it is Baseline newly available (Chrome 122, Firefox 131,
+    //   Safari 18.4), which the client bundle expects of a dev browser, as its
+    //   `Map.groupBy` (Safari 17.4) already did.
+    // - `es2025.collection` (`Set.prototype.union` and friends): V8 12.2 as
+    //   well, so admissible — add it together with the first call that needs it.
+    // - `es2025.promise` (`Promise.try`) and `es2025.intl`
+    //   (`Intl.DurationFormat`) need Node 23; `es2025.regexp` (`RegExp.escape`)
+    //   and `es2025.float16` (`Float16Array`) need Node 24 — out until the Node
+    //   floor rises to one this package keeps.
+    "lib": ["es2024", "es2025.iterator", "dom", "dom.iterable"],
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "strict": true,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true
+  }
+}

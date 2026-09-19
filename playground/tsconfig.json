@@ -1,0 +1,12 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    // e2e/support runs directly under Node type stripping (no transpiler), so
+    // syntax with runtime semantics (enum, namespace, ...) must stay banned.
+    "erasableSyntaxOnly": true
+  },
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"]
+}

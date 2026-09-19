@@ -1,0 +1,40 @@
+{
+  "name": "astro-devtools-root",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morinokami/astro-devtools.git"
+  },
+  "type": "module",
+  "scripts": {
+    "knip": "knip",
+    "publint": "publint ./packages/astro-devtools",
+    "ready": "vp run -r build && vp run playground#sync && vp check && vp run knip && vp run publint && vp run -r test",
+    "prepare": "vp config --no-agent"
+  },
+  "devDependencies": {
+    "@vitejs/devtools": "catalog:devtools",
+    "knip": "catalog:",
+    "pkg-pr-new": "catalog:",
+    "publint": "catalog:",
+    "vite": "catalog:",
+    "vite-plus": "catalog:",
+    "vitest": "catalog:"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.4.2",
+      "onFail": "download"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "26.9.0",
+      "onFail": "download"
+    }
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "packageManager": "pnpm@12.4.2"
+}

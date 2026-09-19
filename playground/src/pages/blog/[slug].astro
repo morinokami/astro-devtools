@@ -1,0 +1,21 @@
+---
+import type { GetStaticPaths } from "astro";
+
+export const getStaticPaths = (() => {
+  return [{ params: { slug: "hello-world" } }];
+}) satisfies GetStaticPaths;
+
+const { slug } = Astro.params;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{slug}</title>
+  </head>
+  <body>
+    <h1>Blog: {slug}</h1>
+    <p>A dynamic route for the Routes panel.</p>
+  </body>
+</html>

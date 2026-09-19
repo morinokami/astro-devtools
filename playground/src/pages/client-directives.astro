@@ -1,0 +1,60 @@
+---
+/** Demonstrate directive arguments and the conditions that leave client islands pending. */
+import PreactCounter from "../components/preact/PreactCounter.tsx";
+import Greeting from "../components/preact/Greeting.tsx";
+
+const rootMargin = "200px";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Client directives</title>
+  </head>
+  <body>
+    <h1>Client directives</h1>
+    <p>
+      Open Astro → Islands in the embedded dock to see each directive's
+      argument and hydration state. <a href="/">Back home</a>
+    </p>
+
+    <h2>client:load</h2>
+    <p>Hydrates on page load. Its badge has no argument.</p>
+    <PreactCounter client:load start={1} />
+
+    <h2>client:idle</h2>
+    <p>
+      <code>{'client:idle={{ timeout: 500 }}'}</code> hydrates when the browser
+      is idle, with a 500 ms timeout. It may already be hydrated when you
+      open the panel.
+    </p>
+    <PreactCounter client:idle={{ timeout: 500 }} start={2} />
+
+    <h2>client:media</h2>
+    <p>
+      <code>client:media="(max-width: 50em)"</code> stays pending while the
+      viewport is wider than 50em (normally 800 px). Narrow the browser
+      window to hydrate it. Widen the window and reload to see it pending
+      again: hydration is not undone when the query stops matching.
+    </p>
+    <PreactCounter client:media="(max-width: 50em)" start={3} />
+
+    <h2>client:only</h2>
+    <p>
+      <code>client:only="preact"</code> renders in the browser. The badge
+      includes the renderer argument.
+    </p>
+    <PreactCounter client:only="preact" start={4} />
+
+    <h2>client:visible</h2>
+    <p>
+      <code>{'client:visible={{ rootMargin: "200px" }}'}</code> stays pending
+      until the greeting below is within 200 px of the viewport. Scroll
+      down with the Islands panel open to see it become hydrated.
+    </p>
+    <div style="height: 150vh" aria-hidden="true"></div>
+    <Greeting client:visible={{ rootMargin }} />
+  </body>
+</html>

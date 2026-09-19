@@ -1,0 +1,29 @@
+---
+// Compare a real hydration failure with a healthy island and one still waiting for visibility.
+import PreactCounter from "../components/preact/PreactCounter.tsx";
+import Greeting from "../components/preact/Greeting.tsx";
+import ThrowingIsland from "../components/preact/ThrowingIsland.tsx";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Client islands (failed)</title>
+  </head>
+  <body>
+    <h1>Client islands — failure fixture</h1>
+    <p>
+      One island fails on purpose during hydration. Open Islands in the Astro dock
+      to compare its failed state with hydrated and pending islands.
+      <a href="/">Back home</a>
+    </p>
+    <ThrowingIsland client:load />
+    <PreactCounter client:load start={5} />
+    <div style="height: 150vh">
+      <p>Scroll down to hydrate the pending island.</p>
+    </div>
+    <Greeting client:visible />
+  </body>
+</html>

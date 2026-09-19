@@ -1,0 +1,70 @@
+/*
+ * Theme tokens and base styles of the Astro DevTools panels. Consumers pull
+ * this file into their own Tailwind stylesheet with `@import`; the `@source`
+ * below registers this package's components (but not their Storybook-only
+ * fixtures) with the consumer's utility scan. Colors follow the DevTools host
+ * through its inherited `color-scheme`, so this file must not set it itself.
+ */
+
+@source "./";
+@source not "./**/*.stories.tsx";
+
+@theme {
+  /* Panel and card background. */
+  --color-panel: light-dark(#fff, #13151a);
+
+  /* Default panel text. */
+  --color-body: light-dark(rgb(60 65 78), rgb(191 193 201));
+
+  /*
+   * Captions, field labels, and icons. The light value must keep the 4.5:1
+   * contrast of 12px text on the tinted note surfaces, not only on white;
+   * the axe audit in the story-tests enforces this.
+   */
+  --color-muted: light-dark(rgb(96 103 122), rgb(145 152 173));
+
+  /* Values, headings, and hover states. */
+  --color-bright: light-dark(#17191e, #fff);
+
+  /* Card borders and row dividers. */
+  --color-subtle: light-dark(rgb(224 227 234), rgb(35 38 45));
+
+  /* Button, chip, and input borders. */
+  --color-control: light-dark(rgb(130 137 154), rgb(100 112 135));
+
+  /* Astro's brand purple. */
+  --color-accent: rgb(113 24 226);
+
+  /* Accent text and focus rings. */
+  --color-lavender: light-dark(rgb(97 16 197), rgb(224 204 250));
+
+  /* Astro's dev toolbar font stacks. */
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+
+  /* Shadow for interactive cards. */
+  --shadow-card:
+    0px 0px 0px 0px rgb(0 0 0 / 0.1), 0px 1px 2px 0px rgb(0 0 0 / 0.1),
+    0px 4px 4px 0px rgb(0 0 0 / 0.09), 0px 10px 6px 0px rgb(0 0 0 / 0.05),
+    0px 17px 7px 0px rgb(0 0 0 / 0.01), 0px 26px 7px 0px rgb(0 0 0 / 0);
+}
+
+@layer base {
+  /* The shared focus ring for every interactive control. */
+  :focus-visible {
+    outline: 2px solid var(--color-lavender);
+    outline-offset: 2px;
+  }
+
+  @media (forced-colors: active) {
+    /* Repaint SVG paths that hardcode white. */
+    svg path[fill="#fff"] {
+      fill: CanvasText;
+    }
+  }
+}

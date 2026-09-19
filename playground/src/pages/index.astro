@@ -1,0 +1,45 @@
+---
+import PreactCounter from "../components/preact/PreactCounter.tsx";
+import Greeting from "../components/preact/Greeting.tsx";
+
+const pages = [
+  { href: "/", label: "Home" },
+  { href: "/blog/hello-world", label: "Blog: Hello World" },
+  { href: "/dashboard", label: "Dashboard (on-demand)" },
+  { href: "/frameworks", label: "Frameworks (one island per renderer)" },
+  { href: "/client-directives", label: "Client directives (arguments + hydration)" },
+  { href: "/client-islands-failed", label: "Client islands (failed on purpose)" },
+  { href: "/server-islands", label: "Server islands (GET + POST)" },
+  { href: "/server-islands-failed", label: "Server islands (failed on purpose)" },
+  { href: "/ja", label: "Home (ja)" },
+  { href: "/old-blog", label: "Redirect: /old-blog" },
+  { href: "/api/hello", label: "API endpoint" },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>astro-devtools playground</title>
+  </head>
+  <body>
+    <h1>astro-devtools playground</h1>
+    <p>
+      Open <a href="/__devtools/">/__devtools/</a> for the standalone Vite
+      DevTools UI, or use the embedded dock on this page.
+    </p>
+    <ul>
+      {pages.map((page) => <li><a href={page.href}>{page.label}</a></li>)}
+    </ul>
+
+    <h2>Islands</h2>
+    <p>Two client islands for the Islands panel.</p>
+    <PreactCounter client:load start={5} />
+    <div style="height: 150vh">
+      <p>Scroll down: the island below hydrates when it enters the viewport.</p>
+    </div>
+    <Greeting client:visible />
+  </body>
+</html>

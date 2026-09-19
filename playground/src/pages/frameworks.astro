@@ -1,0 +1,48 @@
+---
+import PreactCounter from "../components/preact/PreactCounter.tsx";
+import ReactCounter from "../components/react/ReactCounter.tsx";
+import SolidCounter from "../components/solid/SolidCounter.tsx";
+import SvelteCounter from "../components/svelte/SvelteCounter.svelte";
+import VueCounter from "../components/vue/VueCounter.vue";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frameworks</title>
+  </head>
+  <body>
+    <h1>Frameworks</h1>
+    <p>
+      One client island per official renderer, so the Islands panel shows
+      every framework logo. <a href="/">Back home</a>
+    </p>
+    <ul>
+      <li><PreactCounter client:load start={1} /></li>
+      <li><ReactCounter client:load start={2} /></li>
+      <li><SolidCounter client:load start={3} /></li>
+      <li><SvelteCounter client:load start={4} /></li>
+      <li><VueCounter client:load start={5} /></li>
+    </ul>
+    <h2>client:only</h2>
+    <p>
+      A sixth island with no server-rendered HTML: the browser renders it
+      alone, and the Islands panel still resolves its framework logo — for
+      this directive purely from the island's renderer URL.
+    </p>
+    <PreactCounter client:only="preact" start={0} />
+    <h2>Alpine.js</h2>
+    <p>
+      Alpine ships as one global script, not as a renderer — the widget below
+      works, but it is plain HTML with <code>x-data</code>, so no
+      <code>astro-island</code> exists for the panel to list.
+    </p>
+    <div x-data="{ count: 6 }">
+      <button type="button" @click="count++">
+        alpine count: <span x-text="count"></span>
+      </button>
+    </div>
+  </body>
+</html>

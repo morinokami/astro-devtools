@@ -1,0 +1,19 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema-jsonc.json",
+  // Agent skills ship their own scripts (a verification harness); they are
+  // not part of any package graph, so knip lists them as unused files.
+  // `ignoreFiles` hides only that one report; `ignore` would also hide real
+  // issues, like a missing dependency, if a script is ever imported.
+  "ignoreFiles": [".agents/**"],
+  "workspaces": {
+    ".": {
+      "ignoreDependencies": ["@vitejs/devtools", "pkg-pr-new", "vite", "vitest"],
+    },
+    "packages/astro-devtools": {
+      "entry": ["src/{index,client,inject,kit}.ts"],
+    },
+    "playground": {
+      "entry": ["e2e/auth.setup.ts", "e2e/support/start-server.ts"],
+    },
+  },
+}

@@ -1,0 +1,24 @@
+{
+  // Type context for scripts/drive.ts, which lives outside every workspace
+  // package: Playwright's types come from the playground's copy and Node's
+  // from the package's, so `vp check` can lint it with type information.
+
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["es2024", "dom", "dom.iterable"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "typeRoots": ["../../../packages/astro-devtools/node_modules/@types"],
+    "paths": {
+      "@playwright/test": ["../../../playground/node_modules/@playwright/test/index.d.ts"]
+    }
+  },
+  "include": ["scripts/*.ts"]
+}

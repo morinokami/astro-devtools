@@ -1,0 +1,33 @@
+---
+import PreactCounter from "../components/preact/PreactCounter.tsx";
+import DelayedMessage from "../components/DelayedMessage.astro";
+
+// Used with `server:defer`, DelayedMessage's pause keeps the Islands panel's
+// pending state observable before Astro swaps in the rendered message.
+// Props larger than astro's ~2KB URL limit switch the swap request from
+// GET to POST — the third island exercises that branch for the Islands
+// panel.
+const postRequestProps = { fixturePayload: "x".repeat(3000) };
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Server islands</title>
+  </head>
+  <body>
+    <h1>Server islands</h1>
+    <p>
+      Three server islands (two GET, one POST) and one client island, so the
+      Islands panel shows both of its sections. <a href="/">Back home</a>
+    </p>
+    <DelayedMessage server:defer label="First message">
+      <p slot="fallback">Loading the first server island…</p>
+    </DelayedMessage>
+    <DelayedMessage server:defer label="Second message" />
+    <DelayedMessage server:defer label="Third message" {...postRequestProps} />
+    <PreactCounter client:load start={1} />
+  </body>
+</html>

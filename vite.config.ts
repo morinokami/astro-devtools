@@ -1,0 +1,44 @@
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  staged: {
+    "*": "vp check --fix",
+  },
+  fmt: {
+    sortImports: {
+      groups: [
+        "type-import",
+        ["value-builtin", "value-external"],
+        "type-internal",
+        "value-internal",
+        ["type-parent", "type-sibling", "type-index"],
+        ["value-parent", "value-sibling", "value-index"],
+        "unknown",
+      ],
+    },
+    sortTailwindcss: {
+      // Class order depends on the theme: without one, the custom utilities
+      // (`text-muted`, `bg-panel`, …) sort as unknown classes. The sorter
+      // therefore loads the panels' Tailwind entry, which imports the
+      // @astro-devtools/ui theme, for every package — `packages/ui` included.
+      // Keep the path true when that file moves: a stylesheet that does not
+      // resolve is no error, it turns class sorting off while the check passes.
+      stylesheet: "./packages/astro-devtools/src/client/styles.css",
+      functions: ["cn", "cva"],
+    },
+  },
+  lint: {
+    jsPlugins: [{ name: "vite-plus", specifier: "vite-plus/oxlint-plugin" }],
+    rules: { "vite-plus/prefer-vite-plus-imports": "error" },
+    options: { typeAware: true, typeCheck: true },
+  },
+  run: {
+    cache: true,
+    tasks: {
+      "pkg-pr-new": {
+        command: "pkg-pr-new publish --pnpm './packages/astro-devtools'",
+        cache: false,
+      },
+    },
+  },
+});

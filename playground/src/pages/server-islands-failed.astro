@@ -1,0 +1,30 @@
+---
+import DelayedMessage from "../components/DelayedMessage.astro";
+import ThrowingComponent from "../components/ThrowingComponent.astro";
+
+// Used with `server:defer`, ThrowingComponent makes the island request return
+// 500 and leaves its fallback in place. DelayedMessage provides the healthy
+// comparison that eventually swaps in alongside it.
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Server islands (failed)</title>
+  </head>
+  <body>
+    <h1>Server islands — failure fixture</h1>
+    <p>
+      One island below fails on purpose with a 500, leaving its fallback in
+      place. The browser console reports the failed request; the Islands
+      panel identifies the component and shows its failed state.
+      <a href="/">Back home</a>
+    </p>
+    <ThrowingComponent server:defer>
+      <p slot="fallback">This fallback stays forever: the island's request fails.</p>
+    </ThrowingComponent>
+    <DelayedMessage server:defer label="Healthy message" />
+  </body>
+</html>

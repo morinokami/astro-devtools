@@ -1,0 +1,17 @@
+---
+// An on-demand route: rendered by the adapter on every request, so the
+// Routes panel shows it as `server` while the other pages stay `static`.
+export const prerender = false;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <h1>Dashboard</h1>
+    <p>An on-demand (server-rendered) route for the Routes panel.</p>
+  </body>
+</html>

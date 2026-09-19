@@ -1,0 +1,9 @@
+/*
+ * Tailwind compiles this stylesheet at package time and each panel adopts it
+ * in a shadow root. The theme tokens and base styles come from
+ * @astro-devtools/ui, whose own `@source` registers the shared components;
+ * `source()` here adds this package's panels to the utility scan.
+ */
+
+@import "tailwindcss" source("../");
+@import "@astro-devtools/ui/theme.css";
