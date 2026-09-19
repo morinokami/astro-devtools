@@ -69,6 +69,13 @@ allowBuilds:
 minimumReleaseAge: 1440
 trustPolicy: no-downgrade
 trustPolicyExclude:
+  # Inspector requires chokidar 4.x; 4.0.3 was published without provenance.
+  # Upstream tracks this known metadata gap: https://github.com/paulmillr/chokidar/issues/1440
+  - chokidar@4.0.3
+  # Inspector requires pino 9.x. All 207 published files match the official
+  # v9.14.0 tag; this maintainer-published release lacks provenance.
+  # https://github.com/pinojs/pino/releases/tag/v9.14.0
+  - pino@9.14.0
   # The 2023 ReDoS backport for the 6.x line, published (signed, no
   # provenance) after the 7.x line had begun publishing with provenance —
   # a verified-benign downgrade, pinned so other semver versions stay covered.
