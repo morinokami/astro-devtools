@@ -13,6 +13,8 @@ import { mkdtemp, mkdir, rm, symlink, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 
+import { artifactsDir } from "./support/paths.ts";
+
 for (const scenario of [
   {
     name: "later Astro integration exposes the host",
@@ -67,7 +69,15 @@ for (const scenario of [
         configFile: false,
         logLevel: "silent",
         server: { host: scenario.initialHost, port: 0 },
-        vite: { devtools: false },
+        vite: {
+          devtools: false,
+          // Vite's dependency optimizer keeps writing `deps_temp_*` for a few
+          // milliseconds after `server.stop()` resolves. With the default
+          // `<root>/node_modules/.vite` those late writes recreate
+          // `node_modules` under the root being removed (ENOTEMPTY) or, while
+          // the symlink still exists, pile up in the playground's own cache.
+          cacheDir: path.join(artifactsDir, "mcp-host-vite-cache", path.basename(root)),
+        },
         integrations: [
           astroDevtools({ inject: false, mcp: scenario.mcp }),
           {
