@@ -195,8 +195,8 @@ catalogs:
       specifier: 3.13.11
       version: 3.13.11
     '@types/node':
-      specifier: 26.5.1
-      version: 26.5.1
+      specifier: 26.6.1
+      version: 26.6.1
     '@types/react':
       specifier: 19.3.0
       version: 19.3.0
@@ -333,7 +333,7 @@ importers:
     devDependencies:
       '@vitejs/devtools':
         specifier: catalog:devtools
-        version: 0.7.5(f08ea68fce0cbace14bd5acf36ed3ecd)
+        version: 0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7)
       knip:
         specifier: 'catalog:'
         version: 6.35.1
@@ -363,7 +363,7 @@ importers:
         version: 1.0.0(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0)
       '@devframes/vite':
         specifier: catalog:devtools
-        version: 1.0.0(@devframes/hub-ui@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(devframe@1.0.0))(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(devframe@1.0.0)
+        version: 1.0.0(@devframes/hub-ui@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(devframe@1.0.0))(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(devframe@1.0.0)
       devframe:
         specifier: catalog:devtools
         version: 1.0.0(@devframes/agentic@1.0.0)(cac@7.0.0)(srvx@0.12.7)
@@ -376,16 +376,16 @@ importers:
         version: 4.3.3
       '@types/node':
         specifier: 'catalog:'
-        version: 26.5.1
+        version: 26.6.1
       '@vitejs/devtools':
         specifier: catalog:devtools
-        version: 0.7.5(f08ea68fce0cbace14bd5acf36ed3ecd)
+        version: 0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7)
       '@vitejs/devtools-kit':
         specifier: catalog:devtools
-        version: 0.7.5(@devframes/agentic@1.0.0)(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(cac@7.0.0)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7)
+        version: 0.7.5(@devframes/agentic@1.0.0)(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(cac@7.0.0)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7)
       astro:
         specifier: 'catalog:'
-        version: 7.3.2(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.3)(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)
+        version: 7.3.2(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.3)(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)
       cn:
         specifier: 'catalog:'
         version: 0.3.0
@@ -415,10 +415,10 @@ importers:
         version: 7.0.2
       vite:
         specifier: 'catalog:'
-        version: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
+        version: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
       vite-plus:
         specifier: 'catalog:'
-        version: 0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)
+        version: 0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)
 
   packages/ui:
     dependencies:
@@ -431,22 +431,22 @@ importers:
     devDependencies:
       '@storybook/addon-a11y':
         specifier: catalog:storybook
-        version: 10.6.0(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))
+        version: 10.6.0(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))
       '@storybook/addon-themes':
         specifier: catalog:storybook
-        version: 10.6.0(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))
+        version: 10.6.0(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))
       '@storybook/addon-vitest':
         specifier: catalog:storybook
-        version: 10.6.0(@vitest/browser-playwright@4.1.11)(@vitest/browser@4.1.11(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(vitest@4.1.11))(@vitest/runner@4.1.11)(react@19.3.0)(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))(vitest@4.1.11)
+        version: 10.6.0(@vitest/browser-playwright@4.1.11)(@vitest/browser@4.1.11(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(vitest@4.1.11))(@vitest/runner@4.1.11)(react@19.3.0)(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))(vitest@4.1.11)
       '@storybook/preact-vite':
         specifier: catalog:storybook
-        version: 10.6.0(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(preact@10.29.8)(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))
+        version: 10.6.0(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(preact@10.29.8)(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))
       '@tailwindcss/postcss':
         specifier: 'catalog:'
         version: 4.3.3
       '@types/node':
         specifier: 'catalog:'
-        version: 26.5.1
+        version: 26.6.1
       '@vitest/browser-playwright':
         specifier: 'catalog:'
         version: 4.1.11(@voidzero-dev/vite-plus-core@0.3.2)(playwright@1.63.0)(vitest@4.1.11)
@@ -458,7 +458,7 @@ importers:
         version: 10.29.8(preact-render-to-string@6.7.0)
       storybook:
         specifier: catalog:storybook
-        version: 10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
+        version: 10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
       tailwindcss:
         specifier: 'catalog:'
         version: 4.3.3
@@ -467,10 +467,10 @@ importers:
         version: 7.0.2
       vite:
         specifier: 'catalog:'
-        version: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
+        version: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
       vite-plus:
         specifier: 'catalog:'
-        version: 0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)
+        version: 0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)
 
   playground:
     dependencies:
@@ -537,7 +537,7 @@ importers:
         version: 19.3.0(@types/react@19.3.0)
       '@vitejs/devtools':
         specifier: catalog:devtools
-        version: 0.7.5(f08ea68fce0cbace14bd5acf36ed3ecd)
+        version: 0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7)
       '@vitejs/devtools-oxc':
         specifier: catalog:devtools
         version: 0.7.5(@devframes/agentic@1.0.0)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7)(typescript@7.0.2)
@@ -2502,6 +2502,9 @@ packages:
 
   '@types/node@26.5.1':
     resolution: {integrity: sha512-CzNm2FezW4VR/LjG6yUdiEgLE/rAQ9Slj5gCu/C2VrdcW7I0ahNZ8DRbHT7zOZ6r3ONgd/bsQIeSaoDGrd1C6g==}
+
+  '@types/node@26.6.1':
+    resolution: {integrity: sha512-VqGJBMCtdhqkBUCcBLvywI0NJ+KLuVzgNnlBUNFOQjqVxzo2lxLUNg1DSey8+u2u6ktswSAxg+s68QLzWHNOuA==}
 
   '@types/react-dom@19.3.0':
     resolution: {integrity: sha512-ZI7bU42mZXXKHn/qNLEw2IrbiINU7X5+vfgdixBHkCNpYWXjKgfQ/P+uyGb5CjOLB9UcnTeg3rylQtV2hym44Q==}
@@ -5572,6 +5575,13 @@ snapshots:
     optionalDependencies:
       vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
 
+  '@devframes/plugin-inspect@1.0.0(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(devframe@1.0.0)':
+    dependencies:
+      cac: 7.0.0
+      devframe: 1.0.0(@devframes/agentic@1.0.0)(cac@7.0.0)(srvx@0.12.7)
+    optionalDependencies:
+      vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
+
   '@devframes/plugin-messages@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(devframe@1.0.0)':
     dependencies:
       '@devframes/hub': 1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0)
@@ -5581,6 +5591,15 @@ snapshots:
     optionalDependencies:
       vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
 
+  '@devframes/plugin-messages@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(devframe@1.0.0)':
+    dependencies:
+      '@devframes/hub': 1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0)
+      '@devframes/service-open': 1.0.0(devframe@1.0.0)
+      cac: 7.0.0
+      devframe: 1.0.0(@devframes/agentic@1.0.0)(cac@7.0.0)(srvx@0.12.7)
+    optionalDependencies:
+      vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
+
   '@devframes/plugin-terminals@1.0.0(@devframes/hub-ui@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(devframe@1.0.0))(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(devframe@1.0.0)':
     dependencies:
       '@devframes/vite': 1.0.0(@devframes/hub-ui@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(devframe@1.0.0))(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(devframe@1.0.0)
@@ -5589,6 +5608,18 @@ snapshots:
       zigpty: 0.2.1
     optionalDependencies:
       vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
+    transitivePeerDependencies:
+      - '@devframes/hub'
+      - '@devframes/hub-ui'
+
+  '@devframes/plugin-terminals@1.0.0(@devframes/hub-ui@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(devframe@1.0.0))(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(devframe@1.0.0)':
+    dependencies:
+      '@devframes/vite': 1.0.0(@devframes/hub-ui@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(devframe@1.0.0))(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(devframe@1.0.0)
+      cac: 7.0.0
+      devframe: 1.0.0(@devframes/agentic@1.0.0)(cac@7.0.0)(srvx@0.12.7)
+      zigpty: 0.2.1
+    optionalDependencies:
+      vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
     transitivePeerDependencies:
       - '@devframes/hub'
       - '@devframes/hub-ui'
@@ -5606,6 +5637,15 @@ snapshots:
       '@devframes/hub': 1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0)
       '@devframes/hub-ui': 1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(devframe@1.0.0)
       vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
+
+  '@devframes/vite@1.0.0(@devframes/hub-ui@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(devframe@1.0.0))(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(devframe@1.0.0)':
+    dependencies:
+      devframe: 1.0.0(@devframes/agentic@1.0.0)(cac@7.0.0)(srvx@0.12.7)
+      pathe: 2.0.3
+    optionalDependencies:
+      '@devframes/hub': 1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0)
+      '@devframes/hub-ui': 1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(devframe@1.0.0)
+      vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
 
   '@emnapi/core@1.11.0':
     dependencies:
@@ -6439,35 +6479,35 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@storybook/addon-a11y@10.6.0(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))':
+  '@storybook/addon-a11y@10.6.0(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))':
     dependencies:
       '@storybook/global': 5.0.0
       axe-core: 4.13.0
-      storybook: 10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
+      storybook: 10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
 
-  '@storybook/addon-themes@10.6.0(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))':
+  '@storybook/addon-themes@10.6.0(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))':
     dependencies:
-      storybook: 10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
+      storybook: 10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
       ts-dedent: 2.3.0
 
-  '@storybook/addon-vitest@10.6.0(@vitest/browser-playwright@4.1.11)(@vitest/browser@4.1.11(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(vitest@4.1.11))(@vitest/runner@4.1.11)(react@19.3.0)(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))(vitest@4.1.11)':
+  '@storybook/addon-vitest@10.6.0(@vitest/browser-playwright@4.1.11)(@vitest/browser@4.1.11(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(vitest@4.1.11))(@vitest/runner@4.1.11)(react@19.3.0)(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))(vitest@4.1.11)':
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/icons': 2.1.0(react@19.3.0)
-      storybook: 10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
+      storybook: 10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
     optionalDependencies:
-      '@vitest/browser': 4.1.11(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(vitest@4.1.11)
+      '@vitest/browser': 4.1.11(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(vitest@4.1.11)
       '@vitest/browser-playwright': 4.1.11(@voidzero-dev/vite-plus-core@0.3.2)(playwright@1.63.0)(vitest@4.1.11)
       '@vitest/runner': 4.1.11
-      vitest: 4.1.11(@types/node@26.5.1)(@vitest/browser-playwright@4.1.11)(@vitest/browser-preview@4.1.11)(@vitest/ui@4.1.11)(@voidzero-dev/vite-plus-core@0.3.2)(happy-dom@20.14.5)
+      vitest: 4.1.11(@types/node@26.6.1)(@vitest/browser-playwright@4.1.11)(@vitest/browser-preview@4.1.11)(@vitest/ui@4.1.11)(@voidzero-dev/vite-plus-core@0.3.2)(happy-dom@20.14.5)
     transitivePeerDependencies:
       - react
 
-  '@storybook/builder-vite@10.6.0(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))':
+  '@storybook/builder-vite@10.6.0(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))':
     dependencies:
-      storybook: 10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
+      storybook: 10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
       ts-dedent: 2.3.0
-      vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
+      vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
 
   '@storybook/global@5.0.0': {}
 
@@ -6475,19 +6515,19 @@ snapshots:
     dependencies:
       react: 19.3.0
 
-  '@storybook/preact-vite@10.6.0(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(preact@10.29.8)(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))':
+  '@storybook/preact-vite@10.6.0(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(preact@10.29.8)(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))':
     dependencies:
-      '@storybook/builder-vite': 10.6.0(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))
-      '@storybook/preact': 10.6.0(preact@10.29.8)(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))
+      '@storybook/builder-vite': 10.6.0(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))
+      '@storybook/preact': 10.6.0(preact@10.29.8)(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))
       preact: 10.29.8(preact-render-to-string@6.7.0)
-      storybook: 10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
-      vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
+      storybook: 10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
+      vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
 
-  '@storybook/preact@10.6.0(preact@10.29.8)(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))':
+  '@storybook/preact@10.6.0(preact@10.29.8)(storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)))':
     dependencies:
       '@storybook/global': 5.0.0
       preact: 10.29.8(preact-render-to-string@6.7.0)
-      storybook: 10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
+      storybook: 10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
       ts-dedent: 2.3.0
 
   '@sveltejs/acorn-typescript@1.0.12(acorn@8.17.0)':
@@ -6654,6 +6694,11 @@ snapshots:
   '@types/node@26.5.1':
     dependencies:
       undici-types: 8.9.0
+    optional: true
+
+  '@types/node@26.6.1':
+    dependencies:
+      undici-types: 8.9.0
 
   '@types/react-dom@19.3.0(@types/react@19.3.0)':
     dependencies:
@@ -6669,7 +6714,7 @@ snapshots:
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 26.5.1
+      '@types/node': 26.6.1
 
   '@typescript/typescript-aix-ppc64@7.0.2':
     optional: true
@@ -6749,6 +6794,22 @@ snapshots:
       - ocache
       - srvx
 
+  '@vitejs/devtools-kit@0.7.5(@devframes/agentic@1.0.0)(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(cac@7.0.0)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7)':
+    dependencies:
+      '@devframes/hub': 1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0)
+      '@devframes/json-render': 1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0)
+      devframe: 1.0.0(@devframes/agentic@1.0.0)(cac@7.0.0)(srvx@0.12.7)
+      local-pkg: 1.2.1
+      nostics: 1.2.0
+      package-manager-detector: 1.8.0
+      vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
+    transitivePeerDependencies:
+      - '@devframes/agentic'
+      - cac
+      - crossws
+      - ocache
+      - srvx
+
   '@vitejs/devtools-oxc@0.7.5(@devframes/agentic@1.0.0)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7)(typescript@7.0.2)':
     dependencies:
       '@oxlint-config-inspector/core': 1.1.1(typescript@7.0.2)
@@ -6816,7 +6877,7 @@ snapshots:
       - srvx
       - vite
 
-  '@vitejs/devtools@0.7.5(f08ea68fce0cbace14bd5acf36ed3ecd)':
+  '@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7)':
     dependencies:
       '@devframes/agentic': 1.0.0(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0)
       '@devframes/hub': 1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0)
@@ -6920,6 +6981,23 @@ snapshots:
       - utf-8-validate
       - vite
 
+  '@vitest/browser@4.1.11(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(vitest@4.1.11)':
+    dependencies:
+      '@blazediff/core': 1.9.1
+      '@vitest/mocker': 4.1.11(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))
+      '@vitest/utils': 4.1.11
+      magic-string: 0.30.21
+      pngjs: 7.0.0
+      sirv: 3.0.2
+      tinyrainbow: 3.1.0
+      vitest: 4.1.11(@types/node@26.6.1)(@vitest/browser-playwright@4.1.11)(@vitest/browser-preview@4.1.11)(@vitest/ui@4.1.11)(@voidzero-dev/vite-plus-core@0.3.2)(happy-dom@20.14.5)
+      ws: 8.21.1
+    transitivePeerDependencies:
+      - bufferutil
+      - msw
+      - utf-8-validate
+      - vite
+
   '@vitest/expect@3.2.4':
     dependencies:
       '@types/chai': 5.2.3
@@ -6944,6 +7022,14 @@ snapshots:
       magic-string: 0.30.21
     optionalDependencies:
       vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
+
+  '@vitest/mocker@4.1.11(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))':
+    dependencies:
+      '@vitest/spy': 4.1.11
+      estree-walker: 3.0.3
+      magic-string: 0.30.21
+    optionalDependencies:
+      vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
 
   '@vitest/pretty-format@3.2.4':
     dependencies:
@@ -7005,7 +7091,33 @@ snapshots:
       yuku-parser: 0.9.5
     optionalDependencies:
       '@types/node': 26.5.1
-      '@vitejs/devtools': 0.7.5(f08ea68fce0cbace14bd5acf36ed3ecd)
+      '@vitejs/devtools': 0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7)
+      '@voidzero-dev/vite-plus-darwin-arm64': 0.3.2
+      '@voidzero-dev/vite-plus-darwin-x64': 0.3.2
+      '@voidzero-dev/vite-plus-linux-arm64-gnu': 0.3.2
+      '@voidzero-dev/vite-plus-linux-arm64-musl': 0.3.2
+      '@voidzero-dev/vite-plus-linux-x64-gnu': 0.3.2
+      '@voidzero-dev/vite-plus-linux-x64-musl': 0.3.2
+      '@voidzero-dev/vite-plus-win32-arm64-msvc': 0.3.2
+      '@voidzero-dev/vite-plus-win32-x64-msvc': 0.3.2
+      esbuild: 0.28.1
+      fsevents: 2.3.3
+      jiti: 2.7.0
+      publint: 0.3.24
+      typescript: 7.0.2
+      yaml: 2.9.0
+
+  '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)':
+    dependencies:
+      '@oxc-project/runtime': 0.149.0
+      '@oxc-project/types': 0.149.0
+      lightningcss: 1.33.0
+      postcss: 8.5.28
+      yuku-codegen: 0.9.5
+      yuku-parser: 0.9.5
+    optionalDependencies:
+      '@types/node': 26.6.1
+      '@vitejs/devtools': 0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7)
       '@voidzero-dev/vite-plus-darwin-arm64': 0.3.2
       '@voidzero-dev/vite-plus-darwin-x64': 0.3.2
       '@voidzero-dev/vite-plus-linux-arm64-gnu': 0.3.2
@@ -7381,6 +7493,102 @@ snapshots:
       - uploadthing
       - yaml
 
+  astro@7.3.2(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.3)(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0):
+    dependencies:
+      '@astrojs/compiler-rs': 0.4.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.3)
+      '@astrojs/internal-helpers': 0.11.0
+      '@astrojs/markdown-satteri': 0.4.1
+      '@astrojs/telemetry': 3.3.3
+      '@capsizecss/unpack': 4.0.1
+      '@clack/prompts': 1.7.0
+      '@oslojs/encoding': 1.1.0
+      am-i-vibing: 0.4.0
+      aria-query: 5.3.2
+      axobject-query: 4.1.0
+      ci-info: 4.4.0
+      clsx: 2.1.1
+      common-ancestor-path: 2.0.0
+      cookie: 2.0.1
+      devalue: 5.9.2
+      diff: 9.0.0
+      dset: 3.1.4
+      es-module-lexer: 2.3.2
+      esbuild: 0.28.1
+      find-proc: 0.1.0
+      flattie: 1.1.1
+      fontace: 0.4.1
+      get-tsconfig: 5.0.0-beta.4
+      github-slugger: 2.0.0
+      html-escaper: 3.0.3
+      http-cache-semantics: 4.2.0
+      js-yaml: 4.3.0
+      jsonc-parser: 3.3.1
+      magic-string: 1.4.1
+      magicast: 0.5.3
+      mrmime: 2.0.1
+      neotraverse: 1.0.1
+      obug: 2.1.4
+      p-limit: 7.3.0
+      p-queue: 9.3.1
+      package-manager-detector: 1.8.0
+      piccolore: 0.1.3
+      picomatch: 4.0.7
+      semver: 7.8.5
+      shiki: 4.3.1
+      smol-toml: 1.8.0
+      svgo: 4.0.2
+      tinyclip: 0.1.15
+      tinyexec: 1.3.1
+      tinyglobby: 0.2.17
+      ultrahtml: 1.7.0
+      unifont: 0.7.5
+      unstorage: 1.17.5
+      vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
+      vitefu: 1.1.3(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))
+      xxhash-wasm: 1.1.0
+      yargs-parser: 22.0.0
+      zod: 4.5.4
+    optionalDependencies:
+      sharp: 0.35.4(@types/node@26.6.1)
+    transitivePeerDependencies:
+      - '@arethetypeswrong/core'
+      - '@azure/app-configuration'
+      - '@azure/cosmos'
+      - '@azure/data-tables'
+      - '@azure/identity'
+      - '@azure/keyvault-secrets'
+      - '@azure/storage-blob'
+      - '@capacitor/preferences'
+      - '@deno/kv'
+      - '@emnapi/core'
+      - '@emnapi/runtime'
+      - '@netlify/blobs'
+      - '@planetscale/database'
+      - '@types/node'
+      - '@upstash/redis'
+      - '@vercel/blob'
+      - '@vercel/functions'
+      - '@vercel/kv'
+      - '@vitejs/devtools'
+      - aws4fetch
+      - db0
+      - idb-keyval
+      - ioredis
+      - jiti
+      - less
+      - publint
+      - sass
+      - sass-embedded
+      - stylus
+      - sugarss
+      - terser
+      - tsx
+      - typescript
+      - unplugin-unused
+      - unrun
+      - uploadthing
+      - yaml
+
   axe-core@4.13.0: {}
 
   axobject-query@4.1.0: {}
@@ -7425,7 +7633,7 @@ snapshots:
 
   buffer-image-size@0.6.4:
     dependencies:
-      '@types/node': 26.5.1
+      '@types/node': 26.6.1
 
   bundle-name@4.1.0:
     dependencies:
@@ -7792,7 +8000,7 @@ snapshots:
 
   happy-dom@20.14.5:
     dependencies:
-      '@types/node': 26.5.1
+      '@types/node': 26.6.1
       '@types/whatwg-mimetype': 3.0.2
       '@types/ws': 8.18.1
       buffer-image-size: 0.6.4
@@ -8292,6 +8500,32 @@ snapshots:
       svelte: 5.57.0
       vite-plus: 0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)
 
+  oxfmt@0.67.0(svelte@5.57.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)):
+    dependencies:
+      tinypool: 2.1.2
+    optionalDependencies:
+      '@oxfmt/binding-android-arm-eabi': 0.67.0
+      '@oxfmt/binding-android-arm64': 0.67.0
+      '@oxfmt/binding-darwin-arm64': 0.67.0
+      '@oxfmt/binding-darwin-x64': 0.67.0
+      '@oxfmt/binding-freebsd-x64': 0.67.0
+      '@oxfmt/binding-linux-arm-gnueabihf': 0.67.0
+      '@oxfmt/binding-linux-arm-musleabihf': 0.67.0
+      '@oxfmt/binding-linux-arm64-gnu': 0.67.0
+      '@oxfmt/binding-linux-arm64-musl': 0.67.0
+      '@oxfmt/binding-linux-ppc64-gnu': 0.67.0
+      '@oxfmt/binding-linux-riscv64-gnu': 0.67.0
+      '@oxfmt/binding-linux-riscv64-musl': 0.67.0
+      '@oxfmt/binding-linux-s390x-gnu': 0.67.0
+      '@oxfmt/binding-linux-x64-gnu': 0.67.0
+      '@oxfmt/binding-linux-x64-musl': 0.67.0
+      '@oxfmt/binding-openharmony-arm64': 0.67.0
+      '@oxfmt/binding-win32-arm64-msvc': 0.67.0
+      '@oxfmt/binding-win32-ia32-msvc': 0.67.0
+      '@oxfmt/binding-win32-x64-msvc': 0.67.0
+      svelte: 5.57.0
+      vite-plus: 0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)
+
   oxlint-tsgolint@7.0.2001:
     optionalDependencies:
       '@oxlint-tsgolint/darwin-arm64': 7.0.2001
@@ -8324,6 +8558,30 @@ snapshots:
       '@oxlint/binding-win32-x64-msvc': 1.82.0
       oxlint-tsgolint: 7.0.2001
       vite-plus: 0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)
+
+  oxlint@1.82.0(oxlint-tsgolint@7.0.2001)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)):
+    optionalDependencies:
+      '@oxlint/binding-android-arm-eabi': 1.82.0
+      '@oxlint/binding-android-arm64': 1.82.0
+      '@oxlint/binding-darwin-arm64': 1.82.0
+      '@oxlint/binding-darwin-x64': 1.82.0
+      '@oxlint/binding-freebsd-x64': 1.82.0
+      '@oxlint/binding-linux-arm-gnueabihf': 1.82.0
+      '@oxlint/binding-linux-arm-musleabihf': 1.82.0
+      '@oxlint/binding-linux-arm64-gnu': 1.82.0
+      '@oxlint/binding-linux-arm64-musl': 1.82.0
+      '@oxlint/binding-linux-ppc64-gnu': 1.82.0
+      '@oxlint/binding-linux-riscv64-gnu': 1.82.0
+      '@oxlint/binding-linux-riscv64-musl': 1.82.0
+      '@oxlint/binding-linux-s390x-gnu': 1.82.0
+      '@oxlint/binding-linux-x64-gnu': 1.82.0
+      '@oxlint/binding-linux-x64-musl': 1.82.0
+      '@oxlint/binding-openharmony-arm64': 1.82.0
+      '@oxlint/binding-win32-arm64-msvc': 1.82.0
+      '@oxlint/binding-win32-ia32-msvc': 1.82.0
+      '@oxlint/binding-win32-x64-msvc': 1.82.0
+      oxlint-tsgolint: 7.0.2001
+      vite-plus: 0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)
 
   p-limit@7.3.0:
     dependencies:
@@ -8575,6 +8833,40 @@ snapshots:
       '@types/node': 26.5.1
     optional: true
 
+  sharp@0.35.4(@types/node@26.6.1):
+    dependencies:
+      '@img/colour': 1.1.0
+      detect-libc: 2.1.2
+      semver: 7.8.5
+    optionalDependencies:
+      '@img/sharp-darwin-arm64': 0.35.4
+      '@img/sharp-darwin-x64': 0.35.4
+      '@img/sharp-freebsd-wasm32': 0.35.4
+      '@img/sharp-libvips-darwin-arm64': 1.3.3
+      '@img/sharp-libvips-darwin-x64': 1.3.3
+      '@img/sharp-libvips-linux-arm': 1.3.3
+      '@img/sharp-libvips-linux-arm64': 1.3.3
+      '@img/sharp-libvips-linux-ppc64': 1.3.3
+      '@img/sharp-libvips-linux-riscv64': 1.3.3
+      '@img/sharp-libvips-linux-s390x': 1.3.3
+      '@img/sharp-libvips-linux-x64': 1.3.3
+      '@img/sharp-libvips-linuxmusl-arm64': 1.3.3
+      '@img/sharp-libvips-linuxmusl-x64': 1.3.3
+      '@img/sharp-linux-arm': 0.35.4
+      '@img/sharp-linux-arm64': 0.35.4
+      '@img/sharp-linux-ppc64': 0.35.4
+      '@img/sharp-linux-riscv64': 0.35.4
+      '@img/sharp-linux-s390x': 0.35.4
+      '@img/sharp-linux-x64': 0.35.4
+      '@img/sharp-linuxmusl-arm64': 0.35.4
+      '@img/sharp-linuxmusl-x64': 0.35.4
+      '@img/sharp-webcontainers-wasm32': 0.35.4
+      '@img/sharp-win32-arm64': 0.35.4
+      '@img/sharp-win32-ia32': 0.35.4
+      '@img/sharp-win32-x64': 0.35.4
+      '@types/node': 26.6.1
+    optional: true
+
   shebang-command@2.0.0:
     dependencies:
       shebang-regex: 3.0.0
@@ -8646,7 +8938,7 @@ snapshots:
 
   std-env@4.2.0: {}
 
-  storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)):
+  storybook@10.6.0(@types/react@19.3.0)(react@19.3.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)):
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/icons': 2.1.0(react@19.3.0)
@@ -8667,7 +8959,7 @@ snapshots:
       ws: 8.21.1
     optionalDependencies:
       '@types/react': 19.3.0
-      vite-plus: 0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)
+      vite-plus: 0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0)
     transitivePeerDependencies:
       - bufferutil
       - react
@@ -8997,6 +9289,64 @@ snapshots:
       - utf-8-validate
       - yaml
 
+  vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0):
+    dependencies:
+      '@oxc-project/types': 0.149.0
+      '@oxlint/plugins': 1.79.0
+      '@vitest/browser': 4.1.11(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))(vitest@4.1.11)
+      '@vitest/browser-preview': 4.1.11(@voidzero-dev/vite-plus-core@0.3.2)(vitest@4.1.11)
+      '@vitest/expect': 4.1.11
+      '@vitest/mocker': 4.1.11(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))
+      '@vitest/pretty-format': 4.1.11
+      '@vitest/runner': 4.1.11
+      '@vitest/snapshot': 4.1.11
+      '@vitest/spy': 4.1.11
+      '@vitest/utils': 4.1.11
+      oxfmt: 0.67.0(svelte@5.57.0)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
+      oxlint: 1.82.0(oxlint-tsgolint@7.0.2001)(vite-plus@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5(@devframes/json-render@1.0.0(@devframes/hub@1.0.0(@devframes/agentic@1.0.0)(crossws@0.4.12(srvx@0.12.7))(devframe@1.0.0))(devframe@1.0.0))(@vitejs/devtools-oxc@0.7.5)(@vitejs/devtools-rolldown@0.7.5)(@vitejs/devtools-vite@0.7.5)(@vitejs/devtools-vitest@0.7.5)(@voidzero-dev/vite-plus-core@0.3.2)(crossws@0.4.12(srvx@0.12.7))(srvx@0.12.7))(@vitest/browser-playwright@4.1.11)(@vitest/ui@4.1.11)(esbuild@0.28.1)(happy-dom@20.14.5)(jiti@2.7.0)(publint@0.3.24)(svelte@5.57.0)(typescript@7.0.2)(yaml@2.9.0))
+      oxlint-tsgolint: 7.0.2001
+      vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
+      vitest: 4.1.11(@types/node@26.6.1)(@vitest/browser-playwright@4.1.11)(@vitest/browser-preview@4.1.11)(@vitest/ui@4.1.11)(@voidzero-dev/vite-plus-core@0.3.2)(happy-dom@20.14.5)
+    optionalDependencies:
+      '@vitest/browser-playwright': 4.1.11(@voidzero-dev/vite-plus-core@0.3.2)(playwright@1.63.0)(vitest@4.1.11)
+      '@voidzero-dev/vite-plus-darwin-arm64': 0.3.2
+      '@voidzero-dev/vite-plus-darwin-x64': 0.3.2
+      '@voidzero-dev/vite-plus-linux-arm64-gnu': 0.3.2
+      '@voidzero-dev/vite-plus-linux-arm64-musl': 0.3.2
+      '@voidzero-dev/vite-plus-linux-x64-gnu': 0.3.2
+      '@voidzero-dev/vite-plus-linux-x64-musl': 0.3.2
+      '@voidzero-dev/vite-plus-win32-arm64-msvc': 0.3.2
+      '@voidzero-dev/vite-plus-win32-x64-msvc': 0.3.2
+    transitivePeerDependencies:
+      - '@arethetypeswrong/core'
+      - '@edge-runtime/vm'
+      - '@opentelemetry/api'
+      - '@types/node'
+      - '@vitejs/devtools'
+      - '@vitest/coverage-istanbul'
+      - '@vitest/coverage-v8'
+      - '@vitest/ui'
+      - bufferutil
+      - esbuild
+      - happy-dom
+      - jiti
+      - jsdom
+      - less
+      - msw
+      - publint
+      - sass
+      - sass-embedded
+      - stylus
+      - sugarss
+      - svelte
+      - terser
+      - tsx
+      - typescript
+      - unplugin-unused
+      - unrun
+      - utf-8-validate
+      - yaml
+
   vite-prerender-plugin@0.5.13(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)):
     dependencies:
       kolorist: 1.8.0
@@ -9010,6 +9360,10 @@ snapshots:
   vitefu@1.1.3(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)):
     optionalDependencies:
       vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.5.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
+
+  vitefu@1.1.3(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)):
+    optionalDependencies:
+      vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
 
   vitest@4.1.11(@types/node@26.5.1)(@vitest/browser-playwright@4.1.11)(@vitest/browser-preview@4.1.11)(@vitest/ui@4.1.11)(@voidzero-dev/vite-plus-core@0.3.2)(happy-dom@20.14.5):
     dependencies:
@@ -9035,6 +9389,37 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 26.5.1
+      '@vitest/browser-playwright': 4.1.11(@voidzero-dev/vite-plus-core@0.3.2)(playwright@1.63.0)(vitest@4.1.11)
+      '@vitest/browser-preview': 4.1.11(@voidzero-dev/vite-plus-core@0.3.2)(vitest@4.1.11)
+      '@vitest/ui': 4.1.11(vitest@4.1.11)
+      happy-dom: 20.14.5
+    transitivePeerDependencies:
+      - msw
+
+  vitest@4.1.11(@types/node@26.6.1)(@vitest/browser-playwright@4.1.11)(@vitest/browser-preview@4.1.11)(@vitest/ui@4.1.11)(@voidzero-dev/vite-plus-core@0.3.2)(happy-dom@20.14.5):
+    dependencies:
+      '@vitest/expect': 4.1.11
+      '@vitest/mocker': 4.1.11(@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0))
+      '@vitest/pretty-format': 4.1.11
+      '@vitest/runner': 4.1.11
+      '@vitest/snapshot': 4.1.11
+      '@vitest/spy': 4.1.11
+      '@vitest/utils': 4.1.11
+      es-module-lexer: 2.3.2
+      expect-type: 1.4.0
+      magic-string: 0.30.21
+      obug: 2.1.4
+      pathe: 2.0.3
+      picomatch: 4.0.7
+      std-env: 4.2.0
+      tinybench: 2.9.0
+      tinyexec: 1.3.1
+      tinyglobby: 0.2.17
+      tinyrainbow: 3.1.0
+      vite: '@voidzero-dev/vite-plus-core@0.3.2(@types/node@26.6.1)(@vitejs/devtools@0.7.5)(esbuild@0.28.1)(jiti@2.7.0)(publint@0.3.24)(typescript@7.0.2)(yaml@2.9.0)'
+      why-is-node-running: 2.3.0
+    optionalDependencies:
+      '@types/node': 26.6.1
       '@vitest/browser-playwright': 4.1.11(@voidzero-dev/vite-plus-core@0.3.2)(playwright@1.63.0)(vitest@4.1.11)
       '@vitest/browser-preview': 4.1.11(@voidzero-dev/vite-plus-core@0.3.2)(vitest@4.1.11)
       '@vitest/ui': 4.1.11(vitest@4.1.11)
