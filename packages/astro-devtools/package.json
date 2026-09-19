@@ -67,14 +67,5 @@
     "@vitejs/devtools": "^0.7.5",
     "@vitejs/devtools-kit": "^0.7.5",
     "astro": "^7.0.0"
-  },
-  "inlinedDependencies": {
-    "@jridgewell/sourcemap-codec": "1.6.0",
-    "class-variance-authority": "0.7.1",
-    "cn": "0.3.0",
-    "devalue": "5.9.2",
-    "es-module-lexer": "3.0.2",
-    "magic-string": "1.4.1",
-    "preact": "10.29.8"
   }
 }
