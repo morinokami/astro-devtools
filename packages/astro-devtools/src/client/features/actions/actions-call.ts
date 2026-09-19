@@ -2,7 +2,7 @@ import { parse as devalueParse } from "devalue";
 
 /** Call real Astro Action endpoints and decode their responses. */
 
-/** URL options for the `/_actions/` endpoint from the actions-info RPC. */
+/** URL options for the `/_actions/` endpoint from the `astro-devtools:actions:list` RPC. */
 interface ActionEndpointOptions {
   /** Resolved `base` of the site; `/` when unset. */
   base?: string;

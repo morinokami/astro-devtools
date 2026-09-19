@@ -9,11 +9,11 @@ describe("createRpcDefinitions", () => {
 
   it("registers every RPC name declared by AstroDevtoolsRpcFunctions", () => {
     expect([...byName.keys()].sort()).toEqual([
-      "astro-devtools:actions:info",
-      "astro-devtools:config:info",
-      "astro-devtools:overview:info",
+      "astro-devtools:actions:list",
+      "astro-devtools:config:get",
+      "astro-devtools:overview:get",
       "astro-devtools:project:context",
-      "astro-devtools:routes:info",
+      "astro-devtools:routes:list",
     ]);
   });
 

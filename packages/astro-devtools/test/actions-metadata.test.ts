@@ -134,9 +134,9 @@ describe("actionsMetadataPlugin on a dev server", () => {
     store.setViteServer(viteServer);
     store.setActionsModulePath(join(root, "src/actions/index.ts"));
     const definition = createRpcDefinitions(store).find(
-      ({ name }) => name === "astro-devtools:actions:info",
+      ({ name }) => name === "astro-devtools:actions:list",
     );
-    if (!definition) throw new Error("actions:info RPC definition not found");
+    if (!definition) throw new Error("actions:list RPC definition not found");
     return (await definition.setup().handler()) as ActionsInfo;
   }
 

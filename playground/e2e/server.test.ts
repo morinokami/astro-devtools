@@ -143,9 +143,9 @@ test("the MCP endpoint exposes the agent-annotated queries, and only those, as t
   // devframe may list built-ins of its own, so the test asserts membership
   // rather than the exact list.
   for (const name of [
-    "astro-devtools_overview_info",
-    "astro-devtools_routes_info",
-    "astro-devtools_actions_info",
+    "astro-devtools_overview_get",
+    "astro-devtools_routes_list",
+    "astro-devtools_actions_list",
   ]) {
     const tool = tools.find((candidate) => candidate.name === name);
     expect(tool, `missing tool ${name}`).toBeDefined();
@@ -154,13 +154,13 @@ test("the MCP endpoint exposes the agent-annotated queries, and only those, as t
   // RPC functions without `agent` metadata must stay off the tool list.
   const names = tools.map((tool) => tool.name);
   expect(names).not.toContain("astro-devtools_project_context");
-  expect(names).not.toContain("astro-devtools_config_info");
+  expect(names).not.toContain("astro-devtools_config_get");
 });
 
 test("the MCP endpoint answers a tools/call with the running server's data", async () => {
   const request = await connectMcp();
   const result = (await request("tools/call", {
-    name: "astro-devtools_overview_info",
+    name: "astro-devtools_overview_get",
     arguments: {},
   })) as { isError?: boolean; content?: { type: string; text: string }[] };
   expect(result.isError ?? false).toBe(false);

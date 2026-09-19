@@ -22,7 +22,7 @@ import { RouteSectionCard } from "./RouteSectionCard.tsx";
 
 export function RoutesPanel({ context, refreshKey, active }: PanelProps) {
   const pageScoped = isPageScoped(context);
-  const routesState = useRpcData(context, refreshKey, "astro-devtools:routes:info");
+  const routesState = useRpcData(context, refreshKey, "astro-devtools:routes:list");
   const routesInfo = routesState.data;
   // Re-render after Astro client navigation so the current-page row moves
   // with the page.

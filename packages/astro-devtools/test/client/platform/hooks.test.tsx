@@ -41,7 +41,7 @@ function HookView({
   context: DockClientScriptContext;
   refreshKey: number;
 }) {
-  const result = useRpcData(context, refreshKey, "astro-devtools:config:info");
+  const result = useRpcData(context, refreshKey, "astro-devtools:config:get");
   return (
     <div data-status={result.status} data-file={result.data?.configFile ?? ""}>
       <span>{result.error?.message}</span>
@@ -78,7 +78,7 @@ describe("useRpcData", () => {
 
     await act(() => render(<HookView context={dock.context} refreshKey={1} />, container));
     expect(status(container)).toBe("loading");
-    expect(call).toHaveBeenCalledWith("astro-devtools:config:info");
+    expect(call).toHaveBeenCalledWith("astro-devtools:config:get");
 
     await act(async () => request.resolve(configInfo("astro.config.mjs")));
     expect(status(container)).toBe("ready");
