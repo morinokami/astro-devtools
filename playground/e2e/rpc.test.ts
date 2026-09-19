@@ -45,11 +45,11 @@ test("the integration registers the Astro dock group and its entries", async () 
   expect(docs?.url).toBe("https://docs.astro.build/");
 });
 
-test("astro-devtools:routes:info returns a populated routing context", async () => {
+test("astro-devtools:routes:list returns a populated routing context", async () => {
   // The per-field derivations (deriveDelivery, fallbackOf, …) are covered
   // by the unit tests; this test only checks that a real dev run populates
   // the store.
-  const info = (await rpcCall(page, "astro-devtools:routes:info")) as {
+  const info = (await rpcCall(page, "astro-devtools:routes:list")) as {
     context?: { adapterName?: string; output?: string };
     routes?: unknown[];
   };
@@ -64,15 +64,15 @@ test("astro-devtools:project:context returns the project root", async () => {
   expect(context.root?.length).toBeGreaterThan(0);
 });
 
-test("astro-devtools:overview:info reports the running Astro version", async () => {
-  const info = (await rpcCall(page, "astro-devtools:overview:info")) as {
+test("astro-devtools:overview:get reports the running Astro version", async () => {
+  const info = (await rpcCall(page, "astro-devtools:overview:get")) as {
     astroVersion?: string;
   };
   expect(info.astroVersion).toMatch(/^\d+\.\d+\.\d+/);
 });
 
-test("astro-devtools:actions:info lists the playground's actions file and actions", async () => {
-  const info = (await rpcCall(page, "astro-devtools:actions:info")) as {
+test("astro-devtools:actions:list returns the playground's actions file and actions", async () => {
+  const info = (await rpcCall(page, "astro-devtools:actions:list")) as {
     actionsFile?: string;
     actions?: { qualifiedName: string; accept?: string; input?: unknown }[];
   };
@@ -108,8 +108,8 @@ test("astro-devtools:actions:info lists the playground's actions file and action
   expect(upload?.input).toMatchObject({ type: "object", required: ["file"] });
 });
 
-test("astro-devtools:config:info resolves the config file", async () => {
-  const info = (await rpcCall(page, "astro-devtools:config:info")) as { configFile?: string };
+test("astro-devtools:config:get resolves the config file", async () => {
+  const info = (await rpcCall(page, "astro-devtools:config:get")) as { configFile?: string };
   expect(info.configFile).toBe("astro.config.mjs");
 });
 

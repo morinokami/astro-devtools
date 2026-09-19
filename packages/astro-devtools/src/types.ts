@@ -105,7 +105,7 @@ export interface RoutesContext {
   i18n?: I18nInfo;
 }
 
-/** Response from the `astro-devtools:routes:info` RPC. */
+/** Response from the `astro-devtools:routes:list` RPC. */
 export interface RoutesInfo {
   context: RoutesContext;
   routes: RouteDisplay[];
@@ -117,7 +117,7 @@ export interface ProjectContext {
   root?: string;
 }
 
-/** One exported action, as the `astro-devtools:actions:info` RPC describes it. */
+/** One exported action, as the `astro-devtools:actions:list` RPC describes it. */
 export interface ActionDescriptor {
   /** The property names leading from the root `server` object to this action. */
   segments: string[];
@@ -137,7 +137,7 @@ export interface ActionDescriptor {
   input?: unknown;
 }
 
-/** Response from the `astro-devtools:actions:info` RPC. */
+/** Response from the `astro-devtools:actions:list` RPC. */
 export interface ActionsInfo {
   /** Root-relative path of the actions file; unset when the project has none. */
   actionsFile?: string;
@@ -167,7 +167,7 @@ export interface ConfigEntry {
   value: string;
 }
 
-/** Response from the `astro-devtools:config:info` RPC. */
+/** Response from the `astro-devtools:config:get` RPC. */
 export interface ConfigInfo {
   /**
    * Root-relative path of the project's astro.config file. Unset when no
@@ -243,18 +243,18 @@ export interface OverviewCounts {
   actions?: number;
 }
 
-/** Response from the `astro-devtools:overview:info` RPC. */
+/** Response from the `astro-devtools:overview:get` RPC. */
 export interface OverviewInfo extends ProjectInfo {
   counts: OverviewCounts;
 }
 
 /** Response type for every RPC function registered by this integration. */
 export interface AstroDevtoolsRpcFunctions {
-  "astro-devtools:overview:info": OverviewInfo;
+  "astro-devtools:overview:get": OverviewInfo;
   "astro-devtools:project:context": ProjectContext;
-  "astro-devtools:routes:info": RoutesInfo;
-  "astro-devtools:actions:info": ActionsInfo;
-  "astro-devtools:config:info": ConfigInfo;
+  "astro-devtools:routes:list": RoutesInfo;
+  "astro-devtools:actions:list": ActionsInfo;
+  "astro-devtools:config:get": ConfigInfo;
 }
 
 export interface AstroDevtoolsOptions {

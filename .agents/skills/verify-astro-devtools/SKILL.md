@@ -120,7 +120,7 @@ the `Route type filter` group and the `Filter routes` search box (Routes),
 ```sh
 drive.ts http /api/hello                # status, content-type, location, body
 drive.ts mcp tools                      # tools/list through the real Streamable HTTP handshake
-drive.ts mcp call astro-devtools_routes_info --save routes-mcp
+drive.ts mcp call astro-devtools_routes_list --save routes-mcp
 drive.ts log --grep '_actions'          # the dev server's own output, ANSI stripped
 drive.ts url                            # the base URL, for curl
 ```
@@ -160,8 +160,8 @@ Standards for a proof:
   suite stubs the host); recognise it and clear it, don't count it against
   the integration.
 - The MCP surface and the panels share one handler per query, so parity
-  is a legitimate proof: `browser rpc astro-devtools:overview:info` and
-  `mcp call astro-devtools_overview_info` must return the same data.
+  is a legitimate proof: `browser rpc astro-devtools:overview:get` and
+  `mcp call astro-devtools_overview_get` must return the same data.
 
 ## Cleanup
 

@@ -29,7 +29,7 @@ interface AstroDevtoolsRpcDefinition<
 export function createRpcDefinitions(store: AstroDevtoolsStore): AstroDevtoolsRpcDefinition[] {
   return [
     defineQuery(
-      "astro-devtools:overview:info",
+      "astro-devtools:overview:get",
       async () => ({
         ...store.project,
         counts: {
@@ -47,14 +47,14 @@ export function createRpcDefinitions(store: AstroDevtoolsStore): AstroDevtoolsRp
     ),
     // Used by the Islands panel for project-relative editor links.
     defineQuery("astro-devtools:project:context", async () => ({ root: store.project.root })),
-    defineQuery("astro-devtools:routes:info", async () => buildRoutesInfo(store), {
+    defineQuery("astro-devtools:routes:list", async () => buildRoutesInfo(store), {
       description:
         "List project, integration-injected, and Astro internal routes with URL patterns, " +
         "source files, i18n variants, production delivery modes, output settings, adapter, " +
         "and middleware. This query is read-only.",
     }),
     defineQuery(
-      "astro-devtools:actions:info",
+      "astro-devtools:actions:list",
       async () => ({
         actionsFile: store.project.actionsFile,
         root: store.project.root,
@@ -73,7 +73,7 @@ export function createRpcDefinitions(store: AstroDevtoolsStore): AstroDevtoolsRp
       },
     ),
     // Display-ready values used only by the Config panel.
-    defineQuery("astro-devtools:config:info", async () => ({
+    defineQuery("astro-devtools:config:get", async () => ({
       configFile: store.project.configFile,
       root: store.project.root,
       entries: store.configSummary,

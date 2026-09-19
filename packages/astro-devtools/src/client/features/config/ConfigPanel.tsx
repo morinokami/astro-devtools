@@ -17,7 +17,7 @@ import { useRpcData } from "../../platform/hooks.ts";
 
 /** Show the resolved Astro config and a link to its source file. */
 export function ConfigPanel({ context, refreshKey }: PanelProps) {
-  const configState = useRpcData(context, refreshKey, "astro-devtools:config:info");
+  const configState = useRpcData(context, refreshKey, "astro-devtools:config:get");
   const configInfo = configState.data;
   const configFile = configInfo?.configFile;
 

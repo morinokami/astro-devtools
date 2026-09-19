@@ -23,11 +23,11 @@ duplicate registered servers. Read background output with `astro dev logs`.
 Connect an MCP client to `<origin>/__astro-devtools/__mcp` (Streamable HTTP,
 no authentication). These three Astro tools are read-only and take no arguments:
 
-| Need                                                          | Tool                           |
-| ------------------------------------------------------------- | ------------------------------ |
-| Versions, output, adapter, base, i18n, file paths, counts     | `astro-devtools_overview_info` |
-| Resolved routes, sources, matching order, production delivery | `astro-devtools_routes_info`   |
-| Action names, input schemas, accept modes, URL settings       | `astro-devtools_actions_info`  |
+| Need                                                          | Tool                          |
+| ------------------------------------------------------------- | ----------------------------- |
+| Versions, output, adapter, base, i18n, file paths, counts     | `astro-devtools_overview_get` |
+| Resolved routes, sources, matching order, production delivery | `astro-devtools_routes_list`  |
+| Action names, input schemas, accept modes, URL settings       | `astro-devtools_actions_list` |
 
 Without an MCP client, POST JSON-RPC directly. This endpoint accepts calls
 without an initialize handshake or session id. The Accept header below is
@@ -38,7 +38,7 @@ The tool's answer is JSON encoded inside `result.content[0].text`.
 MCP=http://localhost:4321/__astro-devtools/__mcp
 curl -sS "$MCP" -H 'content-type: application/json' \
   -H 'accept: application/json, text/event-stream' \
-  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"astro-devtools_routes_info","arguments":{}}}' \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"astro-devtools_routes_list","arguments":{}}}' \
   | sed -n 's/^data: //p' | jq -r '.result.content[0].text' | jq .
 ```
 

@@ -124,8 +124,8 @@ origin — `http://localhost:4321/__astro-devtools/__mcp` on Astro's default
 port (Streamable HTTP; discoverable via
 `/__astro-devtools/__connection.json`). It gets three read-only tools
 answering with data only the running dev server has:
-`astro-devtools_overview_info`, `astro-devtools_routes_info`, and
-`astro-devtools_actions_info`.
+`astro-devtools_overview_get`, `astro-devtools_routes_list`, and
+`astro-devtools_actions_list`.
 
 When developing this repository, start the playground dev server, then run
 `vp run inspect` in another terminal to open the

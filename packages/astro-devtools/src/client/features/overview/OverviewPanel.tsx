@@ -35,7 +35,7 @@ const EXTERNAL_LINKS: {
 
 /** Show project versions and statistics, with links to the other panels. */
 export function OverviewPanel({ context, refreshKey }: PanelProps) {
-  const overviewState = useRpcData(context, refreshKey, "astro-devtools:overview:info");
+  const overviewState = useRpcData(context, refreshKey, "astro-devtools:overview:get");
   const overviewInfo = overviewState.data;
   const astroDevtoolsVersion = formatVersion(overviewInfo?.astroDevtoolsVersion);
 

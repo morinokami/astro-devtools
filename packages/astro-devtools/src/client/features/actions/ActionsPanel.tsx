@@ -26,7 +26,7 @@ import { actionId, useActionCallState } from "./use-action-call-state.ts";
 const ACTIONS_DOCS_URL = "https://docs.astro.build/en/guides/actions/";
 
 export function ActionsPanel({ context, refreshKey }: PanelProps) {
-  const actionsState = useRpcData(context, refreshKey, "astro-devtools:actions:info");
+  const actionsState = useRpcData(context, refreshKey, "astro-devtools:actions:list");
   const actionsInfo = actionsState.data;
   const state = useActionCallState(actionsInfo);
 

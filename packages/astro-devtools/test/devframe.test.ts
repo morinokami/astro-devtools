@@ -20,11 +20,11 @@ function runSetup() {
 describe("createAstroDevframe", () => {
   it("registers only the agent-tagged RPC definitions", () => {
     // The bridge's transports are unauthenticated, so panel-only queries
-    // (project:context, config:info) must stay off it.
+    // (project:context, config:get) must stay off it.
     expect(runSetup()).toEqual([
-      "astro-devtools:overview:info",
-      "astro-devtools:routes:info",
-      "astro-devtools:actions:info",
+      "astro-devtools:overview:get",
+      "astro-devtools:routes:list",
+      "astro-devtools:actions:list",
     ]);
   });
 });
