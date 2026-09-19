@@ -82,24 +82,17 @@ trustPolicyExclude:
   - semver@6.3.1
 
 peerDependencyRules:
-  allowedVersions:
-    # @astrojs/svelte 9.0.1 and svelte2tsx 0.7.59 accept typescript up to ^6
-    # and only load it from their editor integration (`astro check`), which
-    # the playground never runs. The playground pins the catalog's 7.0.2 so it
-    # shares one vite-plus instance with packages/astro-devtools; with a
-    # different typescript peer, `vp run` started from the playground would
-    # otherwise run `vp pack` through a vite-plus resolved against 6.x.
-    "@astrojs/svelte>typescript": 7.0.2
-    "svelte2tsx>typescript": 7.0.2
-  # Accept any `vite`/`vitest` as a peer, whatever range a package asks for:
-  # the overrides below alias both to vite-plus-core, whose 0.x version
-  # satisfies no upstream peer range.
+  # `vp migrate` adds one entry per override it manages (below). `vite` is the
+  # one that matters: aliased to vite-plus-core, whose 0.x version satisfies
+  # no upstream vite peer range. `vitest` is pinned, not aliased, and meets
+  # its dependents' ranges as long as the pinned version does.
   allowAny:
     - vite
     - vitest
-# One shared vite (aliased to vite-plus-core) and one vitest copy across the
-# entire tree — astro's own vite dependency included — per the Vite+
-# single-instance contract (written by `vp migrate`).
+# The Vite+ single-instance contract, maintained by `vp migrate`: `vite` is
+# aliased to vite-plus-core across the entire tree (astro's own vite
+# dependency included), and `vitest` is pinned to the version Vite+ bundles so
+# every package shares one copy with `vp test`.
 overrides:
   vite@*: "catalog:"
   vitest@*: "catalog:"
