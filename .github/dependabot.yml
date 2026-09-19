@@ -1,0 +1,43 @@
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly
+    groups:
+      # One pull request a month for every action, rather than one per action.
+      github-actions:
+        patterns: ["*"]
+
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 10
+    cooldown:
+      default-days: 3
+    ignore:
+      # The Vite+ release train is bumped by hand. `vite-plus` pins `vitest`
+      # and every `@vitest/*` exactly, and the catalog's `vite` entry is an
+      # `npm:` alias of vite-plus-core at that same version — an entry
+      # Dependabot skips, so no pull request of its own could move the train
+      # together.
+      - dependency-name: vite-plus
+      - dependency-name: vitest
+      - dependency-name: "@vitest/*"
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
+    groups:
+      devtools:
+        patterns: ["@vitejs/devtools*", "@devframes/*", "devframe"]
+      storybook:
+        patterns: ["storybook", "@storybook/*"]
+      astro:
+        patterns: ["astro", "@astrojs/*"]
+      playwright:
+        patterns: ["playwright", "@playwright/*"]
+      react:
+        patterns: ["react", "react-dom", "@types/react", "@types/react-dom"]
+      tailwindcss:
+        patterns: ["tailwindcss", "@tailwindcss/*"]
