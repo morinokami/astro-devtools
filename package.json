@@ -7,7 +7,6 @@
   },
   "type": "module",
   "scripts": {
-    "knip": "knip",
     "publint": "publint ./packages/astro-devtools",
     "ready": "vp run -r build && vp run playground#sync && vp check && vp run knip && vp run publint && vp run -r test",
     "prepare": "vp config --no-agent"

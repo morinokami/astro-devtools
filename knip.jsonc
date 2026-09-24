@@ -5,12 +5,22 @@
   // `ignoreFiles` hides only that one report; `ignore` would also hide real
   // issues, like a missing dependency, if a script is ever imported.
   "ignoreFiles": [".agents/**"],
+  // Circular imports are opt-in and only a warning by default. The `knip`
+  // task (root vite.config.ts) checks them in a second pass, which this
+  // makes fail.
+  "rules": { "cycles": "error" },
   "workspaces": {
     ".": {
       "ignoreDependencies": ["@vitejs/devtools", "pkg-pr-new", "vite", "vitest"],
     },
     "packages/astro-devtools": {
       "entry": ["src/{index,client,inject,kit}.ts"],
+    },
+    // The design system is private and bundled into astro-devtools, its only
+    // consumer, so the exports of its entry files are not a public API:
+    // report one that no panel imports, even when src/index.ts re-exports it.
+    "packages/ui": {
+      "includeEntryExports": true,
     },
     "playground": {
       "entry": ["e2e/auth.setup.ts", "e2e/support/start-server.ts"],
