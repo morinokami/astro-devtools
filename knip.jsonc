@@ -6,9 +6,8 @@
   // issues, like a missing dependency, if a script is ever imported.
   "ignoreFiles": [".agents/**"],
   // Circular imports are opt-in and only a warning by default. The `knip`
-  // script checks them in a separate pass (`knip --cycles`) because listing
-  // them in `include` would replace knip's default issue types, and a type a
-  // later knip adds would then silently go unchecked.
+  // task (root vite.config.ts) checks them in a second pass, which this
+  // makes fail.
   "rules": { "cycles": "error" },
   "workspaces": {
     ".": {

@@ -40,6 +40,14 @@ export default defineConfig({
           "vp dlx @modelcontextprotocol/inspector@latest --web --server-url http://localhost:4321/__astro-devtools/__mcp --transport http",
         cache: false,
       },
+      // Two passes, because knip leaves circular imports out of its default
+      // issue types, and naming `cycles` in knip.jsonc's `include` would
+      // replace those defaults: an issue type a later knip adds would then go
+      // unchecked. The second pass checks cycles alone, which knip.jsonc makes
+      // an error. A task rather than a script, so that this note can stay here.
+      knip: {
+        command: "knip && knip --cycles",
+      },
       "pkg-pr-new": {
         command: "pkg-pr-new publish --pnpm './packages/astro-devtools'",
         cache: false,
