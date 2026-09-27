@@ -52,20 +52,6 @@ export function astroDevtoolsVitePlugin(store: AstroDevtoolsStore): PluginWithDe
     },
     devtools: {
       setup(context) {
-        // The docks below point their renderer at the bare specifier
-        // "astro-devtools/client", which Vite resolves through `/@id/` — but it
-        // only says so in `initHub()`, after this hook, so each registration
-        // warns DF8111 ("the script will fail to load") about scripts that load
-        // fine. Writing Vite's own value first silences that; `initHub()` then
-        // rewrites it identically. Drop it once DevTools (0.7.5 today)
-        // advertises it earlier.
-        if (context.viteServer && !context.staticConfig.dock?.clientModuleResolution) {
-          context.staticConfig.dock = {
-            ...context.staticConfig.dock,
-            clientModuleResolution: "/@id/{specifier}",
-          };
-        }
-
         for (const [defaultOrder, entry] of PANEL_ENTRIES.entries()) {
           context.docks.register({
             id: entry.id,

@@ -64,8 +64,8 @@
     "vite-plus": "catalog:"
   },
   "peerDependencies": {
-    "@vitejs/devtools": "^0.7.5",
-    "@vitejs/devtools-kit": "^0.7.5",
+    "@vitejs/devtools": "^0.7.6",
+    "@vitejs/devtools-kit": "^0.7.6",
     "astro": "^7.0.0"
   }
 }
