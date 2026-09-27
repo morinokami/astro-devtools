@@ -23,7 +23,11 @@ test("the dev server serves the standalone DevTools UI at /__devtools/", async (
   expect(await res.text()).toContain("Devframes");
 });
 
-test("the integration advertises Vite client-module resolution before registering dock scripts", async () => {
+// The Astro docks name their renderer by the bare specifier
+// "astro-devtools/client". Vite DevTools 0.7.6+ (the peer floor) declares the
+// `/@id/` resolution that loads it before any plugin's setup runs, so the
+// registrations raise no DF8111 ("the script will fail to load").
+test("the dev server registers the Astro dock scripts without a DF8111 warning", async () => {
   expect(await readFile(serverLogPath, "utf8")).not.toContain("[DF8111]");
 });
 
