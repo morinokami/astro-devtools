@@ -7,28 +7,28 @@ catalogPrune: true
 
 catalog:
   "@astrojs/alpinejs": 1.0.0
-  "@astrojs/node": 11.1.5
+  "@astrojs/node": 11.1.6
   "@astrojs/preact": 6.0.5
-  "@astrojs/react": 6.0.5
+  "@astrojs/react": 7.0.0
   "@astrojs/solid-js": 7.0.2
   "@astrojs/svelte": 9.0.1
-  "@astrojs/vue": 7.0.2
+  "@astrojs/vue": 7.0.3
   "@playwright/test": 1.63.0
   "@tailwindcss/postcss": 4.3.3
-  "@types/alpinejs": 3.13.11
-  "@types/node": 26.6.1
+  "@types/alpinejs": 3.17.0
+  "@types/node": 26.6.3
   "@types/react": 19.3.0
   "@types/react-dom": 19.3.0
   "@vitest/browser-playwright": 4.1.11
-  alpinejs: 3.17.3
-  astro: 7.3.2
+  alpinejs: 3.17.4
+  astro: 7.3.5
   class-variance-authority: 0.7.1
-  cn: 0.3.0
-  devalue: 5.9.2
+  cn: 0.4.0
+  devalue: 6.0.2
   es-module-lexer: 3.0.2
   happy-dom: 20.14.5
-  knip: 6.35.1
-  magic-string: 1.4.1
+  knip: 6.38.0
+  magic-string: 1.4.2
   pkg-pr-new: 0.0.88
   playwright: 1.63.0
   postcss: 8.5.28
@@ -36,26 +36,26 @@ catalog:
   react: 19.3.0
   react-dom: 19.3.0
   solid-js: 1.9.15
-  svelte: 5.57.0
+  svelte: 5.57.1
   tailwindcss: 4.3.3
   publint: 0.3.24
   typescript: 7.0.2
-  vite: npm:@voidzero-dev/vite-plus-core@0.3.2
-  vite-plus: 0.3.2
+  vite: npm:@voidzero-dev/vite-plus-core@0.3.3
+  vite-plus: 0.3.3
   vitest: 4.1.11
-  vue: 3.5.42
+  vue: 3.5.43
 
 catalogs:
   devtools:
-    "@devframes/agentic": 1.0.0
-    "@devframes/vite": 1.0.0
+    "@devframes/agentic": 1.1.0
+    "@devframes/vite": 1.1.0
     "@vitejs/devtools": 0.7.6
     "@vitejs/devtools-kit": 0.7.6
     "@vitejs/devtools-oxc": 0.7.6
     "@vitejs/devtools-rolldown": 0.7.6
     "@vitejs/devtools-vite": 0.7.6
     "@vitejs/devtools-vitest": 0.7.6
-    devframe: 1.0.0
+    devframe: 1.1.0
   storybook:
     "@storybook/addon-a11y": 10.6.0
     "@storybook/addon-themes": 10.6.0

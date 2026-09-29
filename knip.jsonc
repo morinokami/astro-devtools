@@ -11,7 +11,7 @@
   "rules": { "cycles": "error" },
   "workspaces": {
     ".": {
-      "ignoreDependencies": ["@vitejs/devtools", "pkg-pr-new", "vite", "vitest"],
+      "ignoreDependencies": ["@vitejs/devtools", "vite", "vitest"],
     },
     "packages/astro-devtools": {
       "entry": ["src/{index,client,inject,kit}.ts"],
