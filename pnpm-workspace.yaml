@@ -57,11 +57,11 @@ catalogs:
     "@vitejs/devtools-vitest": 0.7.6
     devframe: 1.1.0
   storybook:
-    "@storybook/addon-a11y": 10.6.0
-    "@storybook/addon-themes": 10.6.0
-    "@storybook/addon-vitest": 10.6.0
-    "@storybook/preact-vite": 10.6.0
-    storybook: 10.6.0
+    "@storybook/addon-a11y": 10.6.1
+    "@storybook/addon-themes": 10.6.1
+    "@storybook/addon-vitest": 10.6.1
+    "@storybook/preact-vite": 10.6.1
+    storybook: 10.6.1
 
 allowBuilds:
   esbuild: true
