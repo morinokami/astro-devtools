@@ -4,6 +4,8 @@ import type { JSX } from "preact";
 
 import { cn } from "cn";
 
+import type { DistributiveOmit } from "./distributive-omit.ts";
+
 import { fieldVariants } from "./field-variants.ts";
 
 /** Render a text-like input (`text`, `search`, …) on the shared field surface. */
@@ -11,7 +13,7 @@ export function TextInput({
   size = "md",
   class: className,
   ...props
-}: Omit<JSX.IntrinsicElements["input"], "class" | "className" | "size"> & {
+}: DistributiveOmit<JSX.IntrinsicElements["input"], "class" | "className" | "size"> & {
   /** `sm` matches the box of a `Chip`, for an input that shares a toolbar row with chips. */
   size?: "md" | "sm";
   class?: string;

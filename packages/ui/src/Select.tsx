@@ -4,6 +4,8 @@ import type { ComponentChildren, JSX } from "preact";
 
 import { cn } from "cn";
 
+import type { DistributiveOmit } from "./distributive-omit.ts";
+
 import { fieldVariants } from "./field-variants.ts";
 
 /**
@@ -15,7 +17,7 @@ export function Select({
   class: className,
   children,
   ...props
-}: Omit<JSX.IntrinsicElements["select"], "children" | "class" | "className"> & {
+}: DistributiveOmit<JSX.IntrinsicElements["select"], "children" | "class" | "className"> & {
   class?: string;
   children: ComponentChildren;
 }) {

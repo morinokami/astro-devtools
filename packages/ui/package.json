@@ -34,6 +34,6 @@
     "vite-plus": "catalog:"
   },
   "peerDependencies": {
-    "preact": "^10.29.8"
+    "preact": "^11.0.0"
   }
 }
