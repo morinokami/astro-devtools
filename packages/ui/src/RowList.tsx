@@ -1,6 +1,6 @@
 /** The divided rows of a card: the list that holds them and the row itself. */
 
-import type { ComponentChildren, JSX } from "preact";
+import type { ComponentChildren, HTMLAttributes, JSX } from "preact";
 
 import { cn } from "cn";
 
@@ -35,7 +35,7 @@ export function Row({
   class: className,
   children,
   ...props
-}: Omit<JSX.HTMLAttributes<HTMLElement>, "children" | "class" | "className" | "ref"> & {
+}: Omit<HTMLAttributes<HTMLElement>, "children" | "class" | "className" | "ref"> & {
   as?: "li" | "div";
   class?: string;
   children: ComponentChildren;

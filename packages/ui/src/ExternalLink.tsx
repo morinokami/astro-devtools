@@ -12,31 +12,34 @@ import type { ComponentChildren, JSX } from "preact";
  * inert anchor retains every other native prop.
  */
 export function ExternalLink({ href, class: className, children, ...props }: ExternalLinkProps) {
-  const navigable = isNavigableLink(href);
+  if (isNavigableLink(href)) {
+    return (
+      <a {...props} class={className} href={href} target="_blank" rel="noreferrer">
+        {children}
+      </a>
+    );
+  }
   // An anchor without `href` is generic, a role that may not be named, so a
   // labeled one falls back to a group.
-  const fallbackRole =
-    !navigable &&
-    props.role === undefined &&
-    (props["aria-label"] !== undefined || props["aria-labelledby"] !== undefined)
-      ? "group"
-      : props.role;
+  const labeled = props["aria-label"] !== undefined || props["aria-labelledby"] !== undefined;
   return (
     <a
       {...props}
       class={className}
-      href={navigable ? href : undefined}
-      target={navigable ? "_blank" : undefined}
-      rel={navigable ? "noreferrer" : undefined}
-      role={fallbackRole}
+      role={props.role === undefined && labeled ? "group" : props.role}
     >
       {children}
     </a>
   );
 }
 
+/**
+ * Native anchor props as Preact types them for an anchor with an `href`,
+ * whose `role` is limited to the ones a link may take; each of those also
+ * holds once an unsafe URL leaves the anchor without one.
+ */
 export type ExternalLinkProps = Omit<
-  JSX.IntrinsicElements["a"],
+  Extract<JSX.IntrinsicElements["a"], { href: unknown }>,
   "children" | "class" | "className" | "href" | "target" | "rel"
 > &
   Record<`data-${string}`, string | number | boolean | undefined> & {

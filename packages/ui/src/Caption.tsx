@@ -1,4 +1,4 @@
-import type { ComponentChildren, JSX } from "preact";
+import type { ComponentChildren, HTMLAttributes } from "preact";
 
 import { cn } from "cn";
 
@@ -12,7 +12,7 @@ export function Caption({
   class: className,
   children,
   ...props
-}: Omit<JSX.HTMLAttributes<HTMLElement>, "children" | "class" | "className" | "ref"> & {
+}: Omit<HTMLAttributes<HTMLElement>, "children" | "class" | "className" | "ref"> & {
   as?: "p" | "span";
   class?: string;
   children: ComponentChildren;
