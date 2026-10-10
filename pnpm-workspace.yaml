@@ -47,15 +47,15 @@ catalog:
 
 catalogs:
   devtools:
-    "@devframes/agentic": 1.1.0
-    "@devframes/vite": 1.1.0
+    "@devframes/agentic": 1.2.3
+    "@devframes/vite": 1.2.3
     "@vitejs/devtools": 0.7.6
     "@vitejs/devtools-kit": 0.7.6
     "@vitejs/devtools-oxc": 0.7.6
     "@vitejs/devtools-rolldown": 0.7.6
     "@vitejs/devtools-vite": 0.7.6
     "@vitejs/devtools-vitest": 0.7.6
-    devframe: 1.1.0
+    devframe: 1.2.3
   storybook:
     "@storybook/addon-a11y": 10.6.1
     "@storybook/addon-themes": 10.6.1
