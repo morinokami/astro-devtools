@@ -36,7 +36,7 @@ catalog:
   react: 19.3.0
   react-dom: 19.3.0
   solid-js: 1.9.15
-  svelte: 5.57.1
+  svelte: 5.57.2
   tailwindcss: 4.3.3
   publint: 0.3.24
   typescript: 7.0.2
