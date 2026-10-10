@@ -29,7 +29,7 @@ catalog:
   happy-dom: 20.14.5
   knip: 6.39.0
   magic-string: 1.4.2
-  pkg-pr-new: 0.0.88
+  pkg-pr-new: 0.0.91
   playwright: 1.63.0
   postcss: 8.5.28
   preact: 10.29.8
