@@ -231,8 +231,8 @@ catalogs:
       specifier: 6.39.0
       version: 6.39.0
     magic-string:
-      specifier: 1.4.2
-      version: 1.4.2
+      specifier: 1.4.3
+      version: 1.4.3
     pkg-pr-new:
       specifier: 0.0.88
       version: 0.0.88
@@ -403,7 +403,7 @@ importers:
         version: 20.14.5
       magic-string:
         specifier: 'catalog:'
-        version: 1.4.2
+        version: 1.4.3
       postcss:
         specifier: 'catalog:'
         version: 8.5.28
@@ -3949,8 +3949,8 @@ packages:
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
 
-  magic-string@1.4.2:
-    resolution: {integrity: sha512-vG+rjFRj1PqdIBozIxAGMjPlOhaVe+GXpbttY/iSK7rGcJRMlwNJO7dcUwmUqkymsFLJiNGI06t4D7Fr7yRC9g==}
+  magic-string@1.4.3:
+    resolution: {integrity: sha512-z12OxmaPGE0F4xlpGdjuAUckipLpQlTAuAmyGhNoD7ODpYUzvDfvtxUbjM/jwznyP178oju/KDdyi220wNJ0RQ==}
 
   magicast@0.5.3:
     resolution: {integrity: sha512-pVKE4UdSQ7DvHzivsCIFx2BJn1mHG6KsyrFcaxFx6tONdneEuThrDx0Cj3AMg58KyN4pzYT+LHOotxDQDjNvkw==}
@@ -7291,7 +7291,7 @@ snapshots:
       http-cache-semantics: 4.2.0
       js-yaml: 4.3.2
       jsonc-parser: 3.3.1
-      magic-string: 1.4.2
+      magic-string: 1.4.3
       magicast: 0.5.3
       mrmime: 2.0.1
       neotraverse: 1.0.1
@@ -7998,7 +7998,7 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  magic-string@1.4.2:
+  magic-string@1.4.3:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.6.0
 
