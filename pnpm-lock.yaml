@@ -222,8 +222,8 @@ catalogs:
       specifier: 6.0.2
       version: 6.0.2
     es-module-lexer:
-      specifier: 3.0.2
-      version: 3.0.2
+      specifier: 3.0.3
+      version: 3.0.3
     happy-dom:
       specifier: 20.14.5
       version: 20.14.5
@@ -397,7 +397,7 @@ importers:
         version: 6.0.2
       es-module-lexer:
         specifier: 'catalog:'
-        version: 3.0.2
+        version: 3.0.3
       happy-dom:
         specifier: 'catalog:'
         version: 20.14.5
@@ -3507,8 +3507,8 @@ packages:
   es-module-lexer@2.3.2:
     resolution: {integrity: sha512-poHGpORABojJJucnV9KbOavETW8lBVnphkW77ER5/BQ5Fz7oXSoCNek7IH3vR5nRjdsEz926ibFYX8KtLQmdyw==}
 
-  es-module-lexer@3.0.2:
-    resolution: {integrity: sha512-BuIB67FngDSyQ/dpQNOZybwdEBDUGJQvOqwWr4ha/ufYiqzuEwPkKO2zLhRAgay28tStRIHUeWmszZAJo3GCOg==}
+  es-module-lexer@3.0.3:
+    resolution: {integrity: sha512-yWGe1O/j+almnV4hOYrmZo8u58JdnmXEMneRQAYkWtqSiT86yoMIEKF4rpqEDj52tbYl3xceBD3DQIBwcsC9Pw==}
 
   esbuild@0.28.1:
     resolution: {integrity: sha512-HrJrvZv5ayxBzPfwphOoNzkzOIIlifzk0KJrGK2c8R4+LKpMtpYLQeUdjnwjWv/LZlkH2laZk+4w78pi99D4Vw==}
@@ -7615,7 +7615,7 @@ snapshots:
 
   es-module-lexer@2.3.2: {}
 
-  es-module-lexer@3.0.2: {}
+  es-module-lexer@3.0.3: {}
 
   esbuild@0.28.1:
     optionalDependencies:
